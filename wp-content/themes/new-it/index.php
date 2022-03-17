@@ -110,12 +110,12 @@ get_header();
                         <h3 class="title_napr">Design</h3>
                     </a>
                 </div>
-<!--                <div class="b-new-index-icons-wrapper__item col-md-2 col-sm-3 col-xs-4">-->
-<!--                    <a href="--><?php //echo get_category_link(($lang ? 18 : 251)); ?><!--" class="item_napr">-->
-<!--                        <img src="--><?php //bloginfo('template_directory'); ?><!--/images/napr4.png" alt="#">-->
-<!--                        <h3 class="title_napr">Design</h3>-->
-<!--                    </a>-->
-<!--                </div>-->
+                <div class="b-new-index-icons-wrapper__item col-md-2 col-sm-3 col-xs-4">
+                    <a href="<?php echo get_category_link(($lang ? 18 : 251)); ?>" class="item_napr">
+                        <img src="<?php bloginfo('template_directory'); ?>/images/napr4.png" alt="#">
+                        <h3 class="title_napr">Design</h3>
+                    </a>
+                </div>
                 <div class="b-new-index-icons-wrapper__item col-md-2 col-sm-3 col-xs-4">
                     <a href="<?php echo get_category_link(1667); ?>" class="item_napr">
                         <img src="<?php bloginfo('template_directory'); ?>/images/napr200.png" alt="#">
@@ -133,7 +133,7 @@ get_header();
                  <div class="b-new-index-icons-wrapper__item col-md-2 col-sm-3 col-xs-4">
                     <a href="<?php echo get_category_link(($lang ? 1675 : 992)); ?>" class="item_napr">
                         <img src="<?php bloginfo('template_directory'); ?>/images/napr24.png" alt="#">
-                        <h3 class="title_napr"><?php echo($lang ? 'Тестирование' : 'QA'); ?></span></h3>
+                        <h3 class="title_napr"><?php echo($lang ? 'Тестирование' : 'Управління <br><span>персоналом</span>'); ?></span></h3>
                     </a>
                 </div>
 
