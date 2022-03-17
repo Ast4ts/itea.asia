@@ -1,0 +1,190 @@
+h1 {
+    font-size: 30px;
+}
+
+/**************************************************/
+.old_grid {
+    position: relative;
+}
+.old__grid__item * {
+    z-index: 10;
+}
+.old__grid__item .category {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.old__grid__item {
+    padding: 45px 55px 30px;
+    position: relative;
+    color: inherit;
+    background: transparent;
+    min-height: 300px;
+    cursor: pointer;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.old__grid__item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 55px;
+    bottom: 0;
+    left: 55px;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.075);
+}
+.old__grid__item:hover .meta--preview .meta__avatar, .old__grid__item:focus .meta--preview .meta__avatar {
+    -webkit-filter: none;
+    filter: none;
+}
+@media (min-width: 600px) {
+    .old__grid__item {
+        padding: 45px 45px 30px;
+    }
+}
+@media (min-width: 900px) {
+    .old_grid {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .old__grid__item {
+        width: 50%;
+        border: none;
+    }
+    .old__grid__item::before {
+        top: 0;
+        right: 5px;
+        bottom: 10px;
+        left: 5px;
+        border: 1px solid rgba(74, 74, 74, 0.075);
+        -webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+        background-color: white;
+    }
+    .old__grid__item:hover::before, .old__grid__item:focus::before {
+        border: 3px solid rgba(129, 196, 131, 0);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    }
+    #theGrid > section.old_grid > .old__grid__item:hover > h2 {
+        color: #E11030;
+    }
+}
+@media (min-width: 1200px) {
+    .old__grid__item {
+        width: 33.333%;
+    }
+}
+/**************************************************/
+
+.container-teacher {
+    background-color: white;
+    position: relative;
+    margin: 30px auto;
+}
+
+.teacher-information-heading {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.teacher-information-heading img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.teacher-main-content {
+    padding: 300px 7% 0;
+}
+
+.teacher-info-block {
+    padding-bottom: 25px;
+}
+
+.teacher-info-block h2 {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 29px;
+}
+
+.container-teacher a {
+    text-decoration: underline;
+    color: #2573a4;
+}
+
+.teacher-info-block_main_text p{
+    text-indent: 38px;
+    padding-bottom: 10px;
+}
+
+.teacher-info-block_main_text{
+	padding: 0px 8px 10px 57px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+}
+.teacher-info-block_main_text * {
+    color: #333333;
+    font-size: 17px!important;
+    font-weight: 400;
+}
+.teacher-info-block_main_text:nth-of-type(2) {
+    padding-left: 23px;
+    padding-right: 0px;
+}
+
+.teacher-info-block p, .teacher-info-block li {
+    font-size: 18px;
+    line-height: 25px;
+}
+.teacher-info-block ul{
+    padding-left: 45px;
+}
+
+.teacher-info-block ul li {
+    padding-top: 11px;
+    padding-left: 13px;
+    list-style-position: outside;
+}
+
+.teacher-info-block_skills {
+    margin-left: -3px;
+}
+
+.teacher-info-block_skills img {
+    margin-bottom: 10px;
+}
+
+.teacher-info-block_education {
+    margin-left: -17px;
+}
+
+.teacher-info-block_education img{
+	margin-bottom: 11px;
+    margin-left: 7px;
+    margin-right: -9px;
+}
+
+@media (max-width: 420px){
+    .teacher-info-block h2 {
+        display: inline-block;
+        font-size: 17px !important;
+        margin-left: 20px;
+    }
+}

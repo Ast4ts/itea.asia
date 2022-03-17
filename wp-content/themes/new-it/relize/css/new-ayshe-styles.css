@@ -1,0 +1,2093 @@
+@font-face{
+    font-family: 'playfair-b-i';
+	src: url(../fonts/playfair-b-i.ttf);
+}
+
+
+@font-face{
+    font-family: 'playfair-i';
+	src: url(../fonts/playfairdisplay-italic-webfont.ttf);
+}
+
+@font-face{
+    font-family: 'gotham-b';
+	src: url(../fonts/Gotham-b.otf);
+}
+@font-face{
+    font-family: 'gotham-r';
+	src: url(../fonts/Gotham-r.otf);
+}
+
+@font-face{
+    font-family: 'gotham-l';
+	src: url(../fonts/Gotham-l.otf);
+}
+
+html {
+    margin-top: 0 !important;
+}
+
+
+#b-ayshe-body{
+	margin-top: 0px;
+	overflow-x: hidden; 
+}
+
+.b-ayshe-container{
+	width: 100% !important;
+	float: left;
+}
+
+.b-ayshe-wrapper{
+	width: 80%;
+	margin: auto;
+}
+
+.b-ayshe-small-wrapper{
+	width: 70%;
+	margin: auto;	
+}
+#b-ayshe-main{
+	float: left;
+}
+.b-ayshe-top-header-heading{
+	text-align: center;
+	display: inline;
+	color: white;
+	font-size: 50px;
+
+    font-family: 'Playfair Display', serif;
+    font-family: 'playfair-b-i';
+
+    font-weight: 700;
+    
+	
+}
+
+.b-ayshe-top-header-heading span{
+	font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+
+}
+.b-ayshe-top-header-block{
+	text-align: center;
+}
+
+.b-ayshe-top-header-currency {
+	display: none;
+}
+
+.b-ayshe-top-header-currency ul{
+	list-style: none; 
+}
+
+.b-ayshe-top-header-currency ul li{
+	display: inline;
+	color: white;	
+}
+.b-ayshe-top-header-currency ul li:first-child{
+	display: block;
+    font-family: 'gotham-r';
+    font-size: 12px;
+
+}
+
+
+.b-ayshe-top-header-currency ul li a{
+	color: white;
+	border-bottom: 1px solid white;
+	font-size: 15px;
+    font-family: 'gotham-r';
+    opacity: .5;
+
+}
+.b-ayshe-bottom-header {
+	margin-top: 140px;
+	height: calc(100vh - 250px);
+	display: flex;
+	align-items: center;
+}
+.b-ayshe-top-header-currency ul li a.active{
+	font-size: 15px;
+    font-family: 'gotham-b';
+    opacity: 1;
+}
+.b-ayshe-bottom-header__inner-wrapper{
+
+}
+.b-ayshe-top-header{
+	padding-top: 50px;
+}
+.b-ayshe-header__currency__drop{
+	left: -20px;
+	border: none;
+	background: transparent;
+	box-shadow: none;
+}
+.b-ayshe-bottom-header--text p{
+	color: #ed1c24;
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+
+}
+.b-ayshe-bottom-header--text {
+	margin-bottom: 50px;
+}
+.b-ayshe-header-main-heading{
+	color: #283347;
+	font-size: 70px;
+	font-weight: 900;
+	line-height: 80px;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+	display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.b-ayshe-header-blue-span{
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #4084ff;
+}
+.b-ayshe-header-blue-span:last-child{
+	display: block;
+}
+
+#b-ayshe-header .b-ayshe-header-ul a{
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #283347;
+	padding-left: 25px;
+}
+#b-ayshe-header .b-ayshe-header-ul .active{
+	color: #ed1c24;
+	background: transparent;
+	position: relative;
+}
+#b-ayshe-header .b-ayshe-header-ul .active:after{
+	content: '';
+	position: absolute;
+	display: block;
+	width: 35px;
+	height: 2px;
+	background-color: #ed1c24;
+	left: 25px;
+    bottom: 10px;
+}
+.b-ayshe-header-ul {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+}
+
+.navbar-inverse{
+	background-color: transparent;
+    border: none;
+}
+
+.b-ayshe-header__currency{
+	float: right;
+	margin-bottom: 0;
+	padding-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 80px;
+}
+.b-ayshe-header__currency li{
+	list-style-type: none;
+	list-style-image: none;
+	line-height: 50px;
+}
+.b-ayshe-header__currency li a{
+    font-family: 'gotham-b';
+	color: #ed1c24;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	position: relative;
+}
+#uah::before{
+	content: url(../img/icons/uah.png);
+	display: block;
+	position: absolute;
+	top: -5px;
+    left: -33px;
+}
+#usd::before{
+	content: url(../img/icons/usd.png);
+	display: block;
+	position: absolute;
+	top: 3px;
+    left: -11px;
+}
+.b-ayshe-header__currency #uah:before,.b-ayshe-header__currency #usd:before,.b-ayshe-header__currency #rub:before{
+		display: none;
+	}
+#rub::before{
+	content: url(../img/icons/rub.png);
+	display: block;
+	position: absolute;
+	top: 5px;
+    left: -11px;
+}
+#b-ayshe-header .b-ayshe-header__booking{
+	margin-left: 20px;
+	display: none !important;
+}
+.b-ayshe-header__booking:hover{
+	opacity: .8;
+}
+#b-ayshe-header .b-ayshe-header__main-nav.bg .b-ayshe-header__booking{
+	display: block !important;
+} 
+#b-ayshe-header .b-ayshe-header__booking a{
+	padding-left: 15px;
+	color: white;
+	transition: .3s all ease;
+}
+.switch-currency__select option::before{
+	content: url(../img/icons/rub.png);
+	display: block;
+	position: absolute;
+	top: 5px;
+    left: -11px;
+}
+.b-ayshe-header__main-nav{
+	margin-bottom: 0;
+	height: 100px;
+}
+#switch-currency_form::after{
+	content: url(../img/icons/caret-down.png);
+	display: block;
+	position: absolute;
+	top: 9px;
+    right: 10px;
+}
+#b-ayshe-header #myNavbar .b-ayshe-header__booking{
+	color: white !important;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	display: block;
+	width: 25%;
+	height: 50px;
+	background-color: #ed1c24;
+	border-radius: 45px;
+	transition: .3s all ease;
+}
+.b-ayshe-header-dark-blue-span{
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #283347;
+}
+.b-ayshe-bottom-header-absolute img{
+	position: absolute;
+	bottom: 0;
+	width: 23%;
+}
+
+video[attr="poster"]{
+	position: absolute;
+	z-index: 100000;
+}
+
+.b-ayshe-bottom-header-absolute{
+	display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+.b-ayshe-bottom-header--methodology{
+	color: #ffef41;
+	font-size: 44px;
+	position: relative;
+	height: 421px;
+    font-family: 'gotham-b';
+	
+}
+.b-ayshe-bottom-header--ayshe-span{
+	color: white;
+	font-size: 32px;
+    font-family: 'gotham-r';
+
+}
+.b-ayshe-bottom-header--cost-span{
+	color: white;
+	font-size: 40px;
+	display: inline;
+	vertical-align: sub;
+	position: absolute;
+	bottom: 80px;
+}
+.b-ayshe-bottom-header--sign-up input{
+	width: 285px;
+	height: 60px;
+	background-color: #ed1c24;
+    border-radius: 45px;
+    color: white;
+	font-size: 15px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+    font-family: 'gotham-r';
+    transition: .3s all ease;
+    z-index: 2;
+    padding-right: 32px;
+}
+.b-ayshe-bottom-header--sign-up form:after{
+	content: url(../img/icons/white-check.png);
+	display: block;
+	position: absolute;
+	left: 246px;
+    top: 22px;
+    z-index: 100;
+}
+.b-ayshe-bottom-header--sign-up:hover,.b-ayshe-bottom-header--sign-up:active{
+		
+		background-color: transparent;	
+	}
+input[type="submit"].b-ayshe-bottom-header--sign-up:hover{
+	color: white;
+	text-decoration: none;
+	background: #ed1c24;
+	opacity: .8;
+}
+.b-ayshe-bottom-header--sign-up span{
+	position: relative;
+	z-index: 3; 
+}
+
+.b-ayshe-header__main-nav.bg .navbar-brand img{
+	margin-top: -3px;
+}
+.b-ayshe-video-section{
+	padding: 0;
+}
+
+/* programme block styles BEGIN */
+.b-ayshe__programme--steps span{
+	opacity: 0.15;
+	color: black;
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+    line-height: 231px;
+}
+
+.b-ayshe__programme--steps:nth-child(odd) span{
+	float: right;
+}
+
+
+.b-ayshe__programme--steps p{
+	color: #283347;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+    font-family: 'gotham-r';
+}
+
+.b-ayshe__programme--steps,.digits, .text{
+	height: 250px; 
+}
+
+.b-ayshe__programme--steps .text{
+	display: flex;
+	align-items: center;
+} 
+.b-ayshe__programme--steps.lots-p{
+	height: auto;
+}
+.b-ayshe__programme--steps p span{
+	color: #e42b45;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+    font-family: 'gotham-r';
+    opacity: 1;
+    text-transform: lowercase;
+}
+.b-ayshe__programme--pic{
+	text-align: center;
+}
+
+.b-ayshe__programme--heading{
+	color: #283347;
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+	text-align: center;
+	padding-top: 40px;
+}
+
+.b-ayshe__programme--small-heading{
+	color: #4084ff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+    font-family: 'gotham-b';
+
+}
+.b-ayshe__programme--steps .b-ayshe__programme--pic{
+	padding-top: 57px;
+}
+.b-ayshe__programme--steps:nth-child(even) .text{
+	text-align: right;
+}
+.b-ayshe__programme--steps .list{
+	padding-top: 84px;
+}
+
+
+.b-ayshe__programme--steps.lots-p .list h3{
+	color: #ed1c24;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+    margin-bottom: 40px;
+
+}
+.b-ayshe__programme--steps.lots-p .list p{
+	position: relative;
+	padding-left: 30px;
+}
+.b-ayshe__programme--steps.lots-p .list p:before{
+	content: url(../img/icons/ayshe-plus.png);
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+}
+.b-ayshe-blue-graphic{
+	background: url(../img/backgrounds/grafic.png) no-repeat center center;
+	height: 952px;
+}
+.b-ayshe-narrow-wrapper{
+	width: 68%;
+	margin: auto;
+}
+
+.b-ayshe-blue-graphic--round{
+	width: 130px;
+	height: 130px;
+	background-color: #283347;
+	border: 4px solid #4084ff;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.b-ayshe-blue-graphic--round p{
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+    font-family: 'gotham-b';
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.b-ayshe-grey-header.container+.b-ayshe-container{
+	padding-bottom: 50px;
+}
+
+/* border test begin*/
+
+
+.b-ayshe__programme--pic__container {
+    width:130px;
+    height:130px;
+    position: relative;
+    margin: auto;
+    display: none;
+}
+.b-ayshe__programme--pic .b-ayshe__programme--pic__container--text .classes{
+	float: none;
+	display: block;
+	font-size: 15px;
+    font-family: 'gotham-b';
+	color: #FF151F;
+	position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    opacity: 1;
+}
+.b-ayshe__programme--pic .b-ayshe__programme--pic__container--text p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -24px;
+    color: #FF151F;
+    font-size: 40px;
+    font-family: 'gotham-b';
+}
+.b-ayshe__programme--pic__container--text{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.arc {
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    border:4px solid #FF151F;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.archideLeft .arc {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+}
+.archide {
+    width:50%;
+    height:0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-animation: appear 2s ease-in 2s forwards;
+    -moz-animation: appear 2s ease-in 2s forwards;
+    -o-animation: appear 2s ease-in 2s forwards;
+    animation: appear 2s ease-in 2s forwards;
+}
+.archideLeft {
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 0;
+    -webkit-animation: appear 2s ease-out forwards;
+    -moz-animation: appear 2s ease-out forwards;
+    -o-animation: appear 2s ease-out forwards;
+    animation: appear 2s ease-out forwards;
+}
+@-webkit-keyframes appear {
+    to {
+        height: 100%;
+    }
+}
+@-moz-keyframes appear {
+    to {
+        height: 100%;
+    }
+}
+@-o-keyframes appear {
+    to {
+        height: 100%;
+    }
+}
+@keyframes appear {
+    to {
+        height: 100%;
+    }
+}
+
+
+/* border test end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.b-ayshe-blue-graphic--round p span{
+	font-size: 15px; 
+	font-weight: 700;
+	text-transform: uppercase;
+    font-family: 'gotham-r';
+
+}
+.b-ayshe-blue-graphic h2{
+	color: white;
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+    text-align: center;
+    margin: 100px 0;
+}
+
+.b-ayshe-blue-graphic__item > p{
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+    font-family: 'gotham-r';
+	padding-top: 30px;
+	text-align: center;
+}
+.b-ayshe-advantages h2{
+	color: #283347;
+	font-size: 50px;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+    margin: 100px 0 50px 0;
+}
+.b-ayshe-advantages__item p{
+	position: relative;
+	padding-left: 62px;
+	margin: 40px 0;
+	padding-right: 15px;
+	color: black;
+}
+.b-ayshe-advantages__item img{
+	position: absolute;
+	left: 0;
+}
+
+/* programme block styles END*/
+
+
+.b-ayshe-red{
+	/* background: url(../img/backgrounds/red-ayshe.png) no-repeat center center; */
+	height: 350px;
+}
+.b-ayshe__red-inner{
+	width: 700px;
+	height: 100%;
+	margin: auto;
+	display: table;
+	text-align: center;
+	position: relative;
+}
+
+.b-ayshe__red-inner p{
+	color: white;
+	font-size: 35px;
+	font-weight: 900;
+    font-family: 'gotham-b';
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: table-cell;
+	opacity: 0;
+	padding-bottom: 80px;
+}
+.b-ayshe__red-inner p span{
+	font-size: 16px;
+	font-weight: 700;
+    font-family: 'gotham-r';
+	text-transform: uppercase;
+	display: block;
+    margin: 15px 0;
+}
+.b-ayshe__red-inner a{
+	vertical-align: middle;
+	display: block;
+	color: #ed1c24;
+	font-size: 15px;
+	font-weight: 700;
+    font-family: 'gotham-r';
+	width: 315px;
+	height: 60px;
+	background-color: white;
+	text-align: center;
+	border-radius: 45px;
+	margin: auto;
+	line-height: 60px;
+	position: absolute;
+	bottom: 60px;
+	left: 0;
+	opacity: 0;
+	right: 0;
+}
+
+.b-ayshe-bottom-header--sign-up:hover:after {
+  opacity: 1;
+}
+.b-ayshe-bottom-header--sign-up p{
+	color: #283347;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 27px;
+}
+.b-ayshe-study__headings{
+	text-align: center;
+	color: #283347;
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+	margin: 50px 0 40px 0;
+}
+.b-ayshe-study__headings span{
+	display: block;
+	color: #4084ff;
+	font-size: 15px;
+	font-weight: 700;
+    font-family: 'gotham-b';
+    line-height: 55px;
+}
+.b-ayshe-study__item{
+	background: url(../img/icons/dots-1.png) no-repeat left 78px center;
+	height: 300px;
+	display: flex;
+    align-items: center;
+    padding-left: 78px;
+    width: 19.666667%;
+    padding-right: 0;
+}
+.b-ayshe-study__item:last-child{
+	background: url(../img/icons/red-dot.png) no-repeat left 78px center;
+}
+.b-ayshe-study__item p{
+	color: #ed1c24;
+	font-size: 40px;
+	line-height: 30px;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+}
+.b-ayshe-study__sign-up{
+	color: #283347;
+	font-size: 14px;
+	font-weight: 400;
+    font-family: 'gotham-r';
+    position: absolute;
+    top: 112px;
+}
+.b-ayshe-study-wrapper{
+	width: 74%;
+    margin: auto;
+}
+.b-ayshe-study{
+	padding-bottom: 200px; 
+}
+.b-ayshe-study__item--inner a{
+	color: white;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 50px;
+	text-align: center;
+    font-family: 'gotham-r';
+	width: 220px;
+	height: 50px;
+	display: block;
+	background-color: #ed1c24;
+	border-radius: 45px;
+	position: absolute;
+	top: 112px;
+}
+.b-ayshe-study__item p .b-ayshe-study__digits{
+	color: #ed1c24;
+	font-size: 40px;
+	font-weight: 700;
+    font-family: 'gotham-b';
+}
+.b-ayshe-study__item--inner p span{
+	color: #ed1c24;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+
+}
+.b-ayshe-study__item--inner{
+	height: 50%;
+	width: 100%;
+	position: relative;
+}
+
+.b-ayshe-headphones--inner{
+	text-align: center;
+	height: 100%;
+}
+#five-usd, #five-rub, #book-rub, #book-usd{
+	display: none;
+}
+
+#five-uah,#five-usd, #five-rub{
+	color: white;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'gotham-b';
+    text-transform: uppercase;
+}
+.b-ayshe-headphones__sliding-block{
+	position: absolute;
+	background-color: #283347;
+	height: 220px;
+	/* webkit-transform: translate3d(0,0,0); */
+	width: 100%;
+    right: 60px;
+	transition:1s width;
+}
+.b-ayshe-stream__overlay a{
+	display: block;
+	height: 100%;
+}
+.b-ayshe-stream__overlay img{
+	position: absolute;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: -50px;
+	cursor: pointer;
+}
+.b-ayshe-stream{
+	position: relative;
+}
+.b-ayshe-stream__overlay{
+	width: 100%;
+	height: 100%;
+	background: white;
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.sliding-headphones{
+	/* transform: translate3d(1203px,0,0); */
+	width: 36%;
+}
+.b-ayshe-stream h2{
+	text-align: center;
+	color: #283347;
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+    font-family: 'gotham-b';
+    margin-top: 80px;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+.b-ayshe-stream h2 span{
+	color: #4084ff;
+	font-size: 15px;
+	font-weight: 700;
+    font-family: 'gotham-b';
+    display: block;
+    line-height: 70px;
+}
+.b-ayshe-headphones__sliding-block img{
+	position: absolute;
+	top: -91px;
+}
+.b-ayshe-headphones{
+	background-color: #283347;
+	height: 220px;
+}
+.b-ayshe-headphones--inner p{
+	font-weight: 700;
+	color: #4084ff;
+	font-size: 35px;
+    font-family: 'gotham-b';
+    margin-bottom: 0;
+    top: 50%;
+    margin-top: -39px;
+    position: absolute;
+    right: 760px;
+
+}
+.b-ayshe-headphones--inner p span{
+	color: white;
+	font-size: 20px;
+	display: block;
+	text-align: right;
+}
+.b-ayshe-online{
+	padding-bottom: 70px;
+}
+.b-ayshe-online h2{
+	font-size: 50px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #283347;
+    font-family: 'gotham-b';
+    text-align: center;
+    margin: 100px 0;
+}
+
+.b-ayshe-online h2 span{
+	color: #4083fd;
+}
+.b-ayshe-online__item img{
+	padding-bottom: 25px;
+}
+
+.b-ayshe-online--inner{
+	padding: 0;
+}
+
+#eight-rub,#eight-usd{
+	display: none;
+	line-height: 38px;
+}
+.b-ayshe-header-cost-span{
+	color: #283347;
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: -6px;
+}
+.b-ayshe-bottom-header--sign-up form{
+	float: left;
+	margin-right: 25px;
+}
+
+.b-ayshe-hidden-menu__sign-up a span{
+	position: relative;
+	z-index: 3;
+}
+
+.b-ayshe-hidden-menu__sign-up input:hover{
+  	text-decoration: none;
+}
+
+.b-ayshe-hidden-menu__sign-up input:hover:after {
+  opacity: 1;
+}
+
+
+.b-ayshe-bottom-header-absolute{
+	float: left;
+}
+.b-ayshe-bottom-header--methodology{
+	float: right;
+	width: 70%;
+}
+
+.b-ayshe-grey-header{
+	height: 115px;
+	background-color: #283347;	
+	width: 100% !important;
+	position: relative;
+}
+.b-ayshe-grey-header__item{
+	height: 100%;
+}
+.b-ayshe-grey-header__item--img-wrapper{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.b-ayshe-grey-header__item p{
+	color: white;
+	font-size: 19px;
+	font-family: 'gotham-b';
+	margin: 0;
+	float: right;
+}
+.b-ayshe-grey-header__item:nth-child(2) p{
+	float: left;
+	padding-left: 100px;
+}
+.b-ayshe-grey-header__item:nth-child(2) p img{
+	left: 20px;
+}
+
+ .b-ayshe-grey-header__item:first-child .b-ayshe-grey-header__item--img-wrapper{
+	float: right;
+	width: 30%;
+}
+.b-ayshe-grey-header__item p img{
+	position: absolute;
+	left: -80px;
+}
+.b-ayshe-grey-header__item p span{
+	color: white;
+	font-size: 15px;
+	font-family: 'gotham-l';
+}
+.b-ayshe-programm-container{
+	float: left;
+	width: 100% !important;
+}
+
+.b-ayshe-programm-container h1{
+	color: black;
+	font-size: 50px;
+	text-align: center;
+    font-family: 'playfair-b-i';
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.b-ayshe-programm-includes{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	font-family: 'gotham-b';
+
+}
+
+.b-ayshe-programm-includes span{
+	color: #c62d4e;
+}
+.b-ayshe-programm-steps h3{
+	font-size: 20px;
+	color: #c62d4e;
+	font-family: 'gotham-b';
+	margin-top: 40px;
+}
+.b-ayshe-programm-steps{
+	padding-top: 30px;
+}
+.b-ayshe-programm-steps p{
+	font-size: 14px;
+	color: black;
+	font-family: 'gotham-r';
+
+}
+
+.b-ayshe-programm-steps p span{
+	color: #e42b45;
+	font-weight: 400;
+}
+.b-ayshe-programm-steps--img{
+	display: inline;
+	margin-left: 227px;
+	margin-top: -51px;
+}
+.b-ayshe-programm-steps--blue-block{
+	background-color: #133b54;
+	border-radius: 5px;	
+	padding: 25px 55px;
+}
+
+.b-ayshe-programm-steps--blue-block p{
+	color: white;
+	font-size: 14px;
+	line-height: 38px;
+	position: relative;
+	font-family: 'gotham-l';
+
+}
+
+.b-ayshe-programm-steps--blue-block p::before{
+	content: url(../img/icons/checked.png);
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    left: -24px;
+    bottom: 17px;
+}
+.b-ayshe-benefits-block{
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+.b-ayshe-digits-heading{
+	color: black;
+	text-align: center;
+	font-size: 50px;
+    font-family: 'playfair-b-i';
+	padding-bottom: 20px;
+}
+.b-ayshe-digits__item h3{
+	color: #c62d4e;
+	font-size: 50px;
+	font-family: 'gotham-b';
+
+}
+.b-ayshe-digits {
+	padding-top: 50px;
+}
+.b-ayshe-digits__item{
+	text-align: center;
+	padding:0;
+}
+
+.b-ayshe-digits__item p{
+	color: black;
+	font-size: 15px;
+	font-family: 'gotham-r';
+
+}
+.b-ayshe-benefits p{
+	color: #111b32;
+	font-size: 15px;
+	line-height: 30px;
+	position: relative;
+	font-family: 'gotham-l';
+
+}
+
+.b-ayshe-benefits{
+	padding: 25px;
+}
+
+.b-ayshe-benefits p::before{
+	content: url(../img/icons/checked.png);
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    left: -30px;
+    top: 2px;
+}
+
+.b-ayshe-doubts{
+	height: 158px;
+	background-color: #133b54;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+}
+.b-ayshe-doubts__text h2{
+	color: white;
+	font-size: 49px;
+	font-family: 'gotham-b';
+}
+
+.b-ayshe-doubts__text p{
+	color: white;
+	font-size: 32px;
+	font-family: 'gotham-b';
+}
+.b-ayshe-doubts__text p span{
+	color: #3de8d0;
+	font-size: 32px;
+}
+.b-ayshe-doubts__button input{
+	width: 345px;
+	height: 60px;
+	background-color: white;
+    background-image: linear-gradient(180deg, #43f0da 0%, #21c2a2 100%);
+    border-radius: 5px;
+    box-shadow: 0 6px 51px rgba(65, 237, 199, 0.3);
+    color: white;
+    display: block;
+    font-size: 18px;
+	line-height: 43px;
+    text-align: center;
+    margin: auto;
+	font-family: 'gotham-b';
+
+}
+
+.b-ayshe-doubts__button{
+	padding-top: 50px;
+}
+
+.b-ayshe-about-iframe img{
+	margin: auto;
+}
+.b-ayshe-about-iframe a{
+	display: block;
+}
+
+.b-ayshe-about-heading{
+	color: black;
+	font-size: 50px;
+	text-align: center;
+    font-family: 'playfair-b-i';
+    padding-top: 40px;
+    padding-bottom: 40px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.b-ayshe-about {
+	padding-bottom: 40px;
+}
+
+.b-ayshe-red-zone{
+	height: 90px;
+	background-color: #ff2e3d;
+	border-radius: 5px;
+}
+
+.b-ayshe-red-zone p{
+	color: white;
+	font-size: 26px;
+	text-align: center;
+	line-height: 90px;
+    margin-bottom: 0;
+	font-family: 'gotham-b';
+}
+
+.b-ayshe-red-zone p a{
+	text-decoration: underline;
+	color: white;
+	font-family: 'gotham-r';
+
+}
+.b-ayshe-boxes__item h3{
+	color: black;
+	font-size: 20px;
+	font-family: 'gotham-b';
+
+}
+
+.b-ayshe-boxes__item p{
+	color: #111b32;
+	font-size:15px;
+	margin-top: 35px;
+    margin-bottom: 35px;
+	font-family: 'gotham-l';
+
+}
+
+.b-ayshe-boxes__item span{
+	font-size: 40px;
+	color: black;
+	vertical-align: bottom;
+	padding-right: 20px;
+	font-family: 'gotham-b';
+
+}
+
+.b-ayshe-boxes__item form{
+	display: inline-block;
+}
+
+.b-ayshe-boxes__item input{
+	display: inline-block;
+	text-align: center;
+	width: 290px;
+	height: 50px;
+	background-color: white;
+    background-image: linear-gradient(180deg, #fb5d69 0%, #ff2e3d 100%);
+    border-radius: 5px;
+    box-shadow: 0 6px 51px rgba(255, 46, 61, 0.47);
+    color: white;
+    line-height: 34px;
+	font-family: 'gotham-b';
+
+}
+
+.b-ayshe-boxes__item{
+	padding: 70px 20px;
+}
+
+.b-ayshe-hidden-menu{
+	display: none;
+}
+.b-ayshe-hidden-menu.fixed{
+	background: white;	
+}
+.b-ayshe-hidden-menu.fixed .navbar-brand img{
+	padding-top: 10px;
+}
+.b-ayshe-menu-booking{
+	text-align: center;
+	color: white !important;
+	width: 220px;
+	height: 50px;
+	background-color: #ed1c24;
+	line-height: 50px;
+	border-radius: 45px;
+	display: block;
+	padding-left: 15px !important;
+}
+.b-ayshe-menu-li-booking{
+	padding-left: 25px;
+}
+
+#b-ayshe-body footer{
+	float: left;
+}
+.b-ayshe-header__main-nav{
+	transition: .3s all ease;
+}
+.b-ayshe-header__main-nav.bg{
+	background-color: white;
+	height: 90px;
+}
+.b-ayshe-header-ul{
+	transition: .3s all ease;
+}
+.b-ayshe-header__main-nav.bg .b-ayshe-header-ul{
+	height: 90px;
+}
+
+
+
+.b-ayshe-hidden-menu.fixed{
+	display: block !important;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+.b-ayshe-bottom-header__single-ayshe{
+	position: relative;
+	height: calc(100vh - 250px);
+	margin-top: 140px;
+}
+.b-ayshe-bottom-header__single-ayshe img{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	max-height: 100%;
+	width: auto;
+}
+
+#switch-currency_form{
+    position: relative;
+}
+
+.b-ayshe-header__currency .dropdownjs > input[readonly]{
+	color: #ed1c24;
+	font-weight: 700;
+	font-family: 'gotham-b';
+	text-transform: uppercase;
+	font-size: 12px;
+	border: none;
+	background:none; 
+	text-align:center; 
+}
+#switch-currency_form ul{
+	top: 35px;
+}
+#switch-currency_form ul li{
+	padding: 0;
+	text-align: center;
+	color: #ed1c24;
+	font-size: 12px;
+	line-height: 24px;
+	font-family: 'gotham-b';
+	text-transform: uppercase;
+
+}
+
+
+/* -------------------- Ayshe media queries BEGIN ----------------------- */ 
+
+@media (min-width: 1480px){
+	.b-ayshe-header__main-nav.bg .b-ayshe-header-ul {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1478px){
+	.b-ayshe-headphones--inner p{
+		margin-top: -64px;
+	}
+	
+}
+
+@media (max-width: 1413px){
+	#b-ayshe-header .b-ayshe-wrapper{
+		width: 98%;
+	}
+	.b-ayshe-header-ul{
+		padding-left: 0;
+	}
+	#b-ayshe-header .b-ayshe-header-ul a{
+		padding-left: 5px;
+	}
+	#b-ayshe-header .b-ayshe-header-ul .active:after{
+		left: 5px;
+	}
+	#b-ayshe-header .b-ayshe-header__booking a{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+}
+
+@media (max-width: 1280px){
+	.b-ayshe-grey-header__item {
+		margin-left: 0;
+	}	
+	.b-ayshe-grey-header__item{
+		width: 50%;
+	}
+	.b-ayshe-grey-header__item p{
+		text-align: center;
+	}
+	.b-ayshe-grey-header:nth-child(1){
+		float: left;
+	}
+	.b-ayshe-grey-header:nth-child(2){
+		float: right;
+	}
+	.b-ayshe-study-wrapper{
+		width: 98%;
+	}
+	.b-ayshe-study__item{
+		padding-left: 30px;
+	}
+	.b-ayshe-study__item--inner a{
+		width: 100%;
+	}
+	.b-ayshe-header__main-nav.bg .b-ayshe-header-ul{
+		width: 70%;
+	}
+	.b-ayshe-stream h2{
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 1252px){
+	.b-ayshe-wrapper{
+		width: 98%;
+	}
+	.b-ayshe-header-main-heading{
+		font-size: 55px;
+	}
+	.b-ayshe-grey-header__item p{
+		margin: auto;
+		position: relative;
+	}
+	.b-ayshe-grey-header__item:first-child .b-ayshe-grey-header__item--img-wrapper{
+		width: 100%;
+	}
+	.b-ayshe-grey-header__item:nth-child(2) p{
+		padding-left: 0;
+	}
+	.b-ayshe-grey-header__item:nth-child(2) p img {
+    	left: -80px;
+	}
+	.b-ayshe-headphones--inner p span{
+		text-align: center;
+	}
+	.b-ayshe-headphones--inner p{
+		right: 500px;
+	}
+}
+
+@media (max-width: 1104px){
+	#b-ayshe-header #myNavbar .b-ayshe-header__booking a{
+
+		line-height: 12px !important;
+	}
+	.b-ayshe-header__main-nav.bg .navbar-brand{
+		display: none;
+	}
+
+}
+
+@media (max-width: 1021px){
+	.b-ayshe-header__currency #uah:before,.b-ayshe-header__currency #usd:before,.b-ayshe-header__currency #rub:before{
+		display: none;
+	}
+}
+
+@media (max-width: 991px){
+	.b-ayshe-grey-header__item{
+		position: relative;
+		float: left;
+	}
+	.b-ayshe-grey-header__item:first-child{
+		margin-left: 0px;
+		padding-left: 13%;
+	}
+	.b-ayshe-programm-steps--blue-block p::before{
+		bottom: 0;
+		top: 3px;
+	}
+	.b-ayshe-about{
+		width: 100%;
+		float: left;
+	}
+	.b-ayshe-red-zone {
+		float: left;
+	}
+	.b-ayshe-boxes__item img{
+		margin: auto;
+	}
+	.b-ayshe-boxes__item{
+		padding: 40px 20px; 
+	}
+	.b-ayshe-hidden-menu.fixed{
+		width: 100%;
+	}
+	.b-ayshe-hidden-menu__logo {
+		display: none;
+	}
+	.b-ayshe-wrapper{
+		width: 100%;
+	}
+	.b-ayshe-hidden-menu__five-classes {
+		width: 50%;
+		float: left;
+	}
+	.b-ayshe-hidden-menu__sign-up {
+		width: 50%;
+		float: right;
+	}
+
+	.b-ayshe-bottom-header-absolute{
+		position: absolute;
+		display: block;
+		bottom: 0;
+		height: 540px;
+
+	}
+	.b-ayshe-bottom-header--sign-up input{
+		position: relative;
+		margin: auto;
+		display: block;
+		bottom:0;
+		left: 0;
+	}
+	.b-ayshe-bottom-header--sign-up form{
+		float: none;
+    	
+    	margin-right: 0;
+    	
+	}
+	.b-ayshe-bottom-header--sign-up--wrapper{
+		width: 300px;
+		height: 100%;
+		position: relative;
+		margin: auto;
+	}
+	.b-ayshe-bottom-header--sign-up form:after{
+
+	}
+	.b-ayshe-bottom-header--sign-up p{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.b-ayshe-bottom-header--methodology{
+		padding-top: 10px;
+	}
+	
+	.b-ayshe-bottom-header--sign-up:hover,.b-ayshe-bottom-header--sign-up:active, .b-ayshe-bottom-header--sign-up:focus:active, .b-ayshe-bottom-header--sign-up:visited{
+		
+		background-color: transparent;	
+		border: none;
+	}
+	.b-ayshe-bottom-header--sign-up:after{
+		background-image:none; 
+	}
+	.b-ayshe-benefits{
+		padding: 25px 25px 25px 55px;
+	}
+	.b-ayshe-header-ul{
+		text-align: center;
+	}
+	.b-ayshe-header-ul li{
+		width: 20%;
+	}
+	.b-ayshe-header__main-nav.bg .b-ayshe-header-ul li{
+		width: 20%;
+	} 
+
+	#b-ayshe-header .b-ayshe-header-ul .active:after {
+    	left: 50%;
+    	margin-left: -24px;
+	}
+	.b-ayshe-header-ul li a{
+		font-size: 12px;
+	}
+	.b-ayshe-header-ul{
+		width: 600px;
+	}
+	.b-ayshe-bottom-header__single-ayshe{
+		display: none;
+	}
+	.b-ayshe-bottom-header--text{
+		text-align: center;
+	}
+	.b-ayshe__programme--steps.lots-p .digits{
+		text-align: center;
+	}
+	.b-ayshe__programme--steps.lots-p .digits span{
+		float: none;
+	}
+	.b-ayshe__programme--steps .list{
+		padding-top: 0;
+	}
+	.b-ayshe__programme--steps.lots-p .list h3{
+		text-align: center;
+	}
+	
+	.b-ayshe-grey-header.container+.b-ayshe-container{
+		padding-bottom: 100px;
+	}
+	.b-ayshe-study__item{
+		width: 33.33333333%;
+	}
+	.b-ayshe-headphones__sliding-block{
+		top: 0;
+	}
+	.b-ayshe-headphones{
+		position: relative;
+	}
+	.b-ayshe-headphones--inner p{
+		font-size: 25px;
+		right: 410px;
+	}
+	.b-ayshe-header__main-nav{
+		height: auto;
+	}
+	.b-ayshe-header__main-nav.bg .b-ayshe-header-ul{
+		width: 80%;
+	}
+	.b-ayshe-stream h2{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 901px) and (min-width: 768px){
+	.b-ayshe-header__main-nav .navbar-brand{
+		display: none;
+	}
+	.b-ayshe-header-ul{
+		float: left;
+	}
+}
+@media (max-width: 767px){
+	.b-ayshe-grey-header__item:first-child{
+		margin-left: 0px;
+		padding-left: 40px;
+	}
+	.b-ayshe-bottom-header--methodology{
+		font-size: 40px;
+	}
+	.b-ayshe-bottom-header--cost-span{
+		display: block;
+		position: relative;
+		width: 100%;
+		text-align: left;
+		bottom: 0;
+	}
+	.b-ayshe-bottom-header--sign-up input{
+		display: block;
+		position: relative;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.b-ayshe-hidden-menu__five-classes p{
+		font-size: 13px;
+	}
+	form{
+		overflow: visible;
+		width: 100%;
+	}
+	.b-ayshe-header__main-nav .container-fluid{
+		height: 100%;
+		position: relative;
+	}
+	.b-ayshe-header__main-nav .navbar-toggle{
+		position: absolute;
+		right: 15px;
+		top: 50%;
+    	margin-top: -17px;
+    	margin-right: 0;
+    	margin-bottom: 0;
+	}
+	.b-ayshe-header__main-nav .navbar-header{
+		height: 100%;
+	}
+	.b-ayshe__programme--steps.lots-p{
+		float: left;
+	}
+	.b-ayshe-study__item{
+		width: 50%;
+	}
+	.sliding-headphones img{
+		right: 10px;
+	}
+	.b-ayshe-headphones__sliding-block.sliding-headphones img{
+		right: 10px;
+	}
+	.b-ayshe-headphones--inner p{
+		margin-top: -80px;
+	}
+	.b-ayshe-header__main-nav{
+		height: 100px;
+	}
+	#myNavbar .b-ayshe-header-ul {
+    	width: 100%;
+	}
+
+	.b-ayshe-header__main-nav #myNavbar{
+		z-index: 10000;
+		position: absolute;
+		width: 100%;
+		background-color: #F4F3F2;
+		border: none;
+	}
+	#myNavbar .b-ayshe-header-ul{
+		margin: 0;
+		display: block;
+		height: auto;
+	}
+	#myNavbar .b-ayshe-header-ul li{
+		width: 100%;
+		display: block;
+	}
+	.b-ayshe-header__currency{
+		display: block;
+		width: 100px;
+		margin: auto;
+		text-align: center;
+		float: none;
+	}
+	.b-ayshe-header__currency li{
+		line-height: 34px;
+	}
+	.b-ayshe-header__currency__drop.dropdown-menu{
+		min-width: 0;
+		width: auto;
+		margin: auto;
+		position: relative;
+		float: none;
+		left: 0;
+	}
+	.b-ayshe-header__currency::after{
+		top: 5px;
+    	right: 106px;
+	}
+	#b-ayshe-header .b-ayshe-header-ul a{
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+	#b-ayshe-header .b-ayshe-header-ul .active:after{
+		bottom: 5px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	.b-ayshe-header__main-nav .icon-bar{
+		background-color: black !important;
+	}
+	.b-ayshe-header__main-nav .navbar-toggle.active .icon-bar{
+		background-color: white!important;
+	}
+	.b-ayshe-header__main-nav .navbar-toggle.collapsed{
+		background-color: white !important;
+	}
+	#myNavbar .b-ayshe-header__currency{
+		padding-top: 0!important;
+
+	}
+	.b-ayshe-header__main-nav .collapse.in {
+		overflow: initial;
+	}
+}
+@media (max-width: 663px){
+	.b-ayshe-bottom-header-absolute{
+		position: relative;
+		height: auto;
+	}
+	
+}
+
+@media (max-width: 640px){
+	.b-ayshe-programm-steps--img{
+		display: block;
+		margin: auto;
+	}
+	.b-ayshe-doubts__button input{
+		width: 50%;
+	}
+	.b-ayshe-bottom-header-absolute img{
+		display: none;
+	}
+	.b-ayshe-bottom-header--methodology{
+		font-size: 42px;
+		width: 100%;
+	}
+	.b-ayshe-bottom-header--methodology{
+		text-align: center;
+	}
+	#b-ayshe-header{
+	    background:url(../img/backgrounds/new-bg-ayshe.png) no-repeat center center;
+	    height: auto;
+	    background-size: cover;  
+	    position: relative;
+	    float: left;
+	    width: 100%;
+	}
+	.b-ayshe-grey-header{
+		float: left;
+	}
+	.b-ayshe-bottom-header{
+		position: relative;
+	}
+	.b-ayshe-top-header{
+		padding-top: 10px;
+		text-align: center;
+	}
+	.b-ayshe-bottom-header-absolute{
+		position: relative;
+		display: block;
+		height: auto;
+	}
+	#b-ayshe-main{
+		float: left;
+	}
+	.b-ayshe-bottom-header--methodology{
+		height: auto;
+	}
+	.b-ayshe-bottom-header--sign-up input{
+		position: relative;
+		bottom: 0;
+	}
+	.b-ayshe-bottom-header{
+		height: auto;
+	}
+	.b-ayshe-hidden-menu.fixed{
+		height: auto;
+	}
+	.b-ayshe-hidden-menu__five-classes{
+		width: 100%;
+		float: none;
+	}
+	.b-ayshe-hidden-menu__sign-up {
+		width: 100%;
+		float: none;
+		padding-top: 0;
+		padding-bottom: 25px;
+	}
+	.b-ayshe-bottom-header--cost-span{
+		text-align: center;
+	}
+	.b-ayshe-bottom-header-absolute{
+		margin-bottom: 30px;
+	}
+	.b-ayshe-bottom-header-absolute{
+		margin-bottom: 66px;
+	}
+	.b-ayshe-bottom-header__single-ayshe{
+		display: none;
+	}
+	.b-ayshe-grey-header__item p img{
+		display: none;
+	}
+	.b-ayshe__red-inner{
+		width: 100%;
+	}
+	.b-ayshe-grey-header__item:first-child{
+		padding-left: 15px;
+	}
+	.b-ayshe-header-main-heading,.b-ayshe-advantages h2,.b-ayshe-blue-graphic h2,.b-ayshe-study__headings,.b-ayshe-online h2,.b-ayshe-stream h2,.b-ayshe__programme--heading{
+		font-size: 32px;
+	}
+	.b-ayshe__programme--steps .digits{
+		width: 50%;
+	}
+	.b-ayshe__programme--pic{
+		width: 50%;
+	}
+	.b-ayshe__programme--steps .digits{
+		text-align: center;
+	}
+	.b-ayshe__programme--steps .digits span{
+		float: none;
+	}
+	.b-ayshe__programme .text{
+		width: 100%;
+	}
+	.b-ayshe__programme--steps:first-of-type .b-ayshe__programme--pic:after{
+		display: none;
+	}
+	
+	.b-ayshe-narrow-wrapper{
+		width: 98%;
+	}
+	.b-ayshe-headphones--inner p {
+    	font-size: 20px;
+    	right: 250px;
+	}
+	.b-ayshe-headphones__sliding-block{
+		display: none;
+	}
+	.b-ayshe-headphones--inner p{
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	.b-ayshe-headphones--inner{
+		display: flex;
+		align-items: center;
+	}
+	.b-ayshe-study{
+		padding-bottom: 0;
+	}
+	.b-ayshe__red-inner a{
+		bottom: 40px;
+	}
+	.b-ayshe__programme--pic__container {
+		display: block;
+	}
+	.b-ayshe-stream__overlay img{
+		display: none;
+	}
+	.b-ayshe-stream h2{
+		margin-top: 80px;
+	}
+	.b-ayshe-stream h2 span{
+		line-height: 25px;
+		padding-top: 30px;
+	}
+	.b-ayshe-header-main-heading{
+		font-size: 26px !important;
+	}
+}
+@media (min-width: 641px){
+	#b-ayshe-header{
+	    background:url(../img/backgrounds/new-bg-ayshe.png) no-repeat center center;
+	    height: calc(100vh - 110px);
+	    background-size: cover;  
+	    position: relative;
+	}
+}
+
+@media (max-width: 480px){
+	.b-ayshe-grey-header__item{
+		width: 100%;
+		text-align: center;
+		padding-left: 40px;
+	}
+	.b-ayshe-grey-header__item:last-child{
+		padding: 0;
+		background: #e4e7ee;
+	}
+	.b-ayshe-doubts__text h2{
+		font-size: 33px;
+	}
+	
+	.b-ayshe-doubts__button input{
+		width: 100%;
+	}
+	.b-ayshe-boxes__item input{
+		width: 100%;
+	}
+	.b-ayshe-bottom-header--methodology{
+		font-size: 36px;
+		width: 100%;
+	}
+	.b-ayshe-programm-container{
+		margin-top: 115px;
+	}
+	.b-ayshe-bottom-header--sign-up input{
+		width: 100%;
+	}
+	.b-ayshe-grey-header{
+		min-height: 115px;
+	}
+	.b-ayshe-grey-header__item:first-child{
+		padding-left: 0;
+	}
+	.b-ayshe-grey-header + .b-ayshe-container{
+		padding-top: 115px;
+	}
+	.b-ayshe-grey-header__item:last-child{
+		background-color: #283347;
+	}
+	.b-ayshe-study__headings span{
+		line-height: 42px;
+	}
+	.b-ayshe-stream h2{
+		margin-top: 30px;
+	}
+
+}
+@media (max-width: 420px){
+	.b-ayshe-grey-header__item:last-child .b-ayshe-grey-header__item--img-wrapper{
+		padding-left: 0;
+	}
+	
+	.b-ayshe-grey-header__item--img-wrapper{
+		width: 100%;
+		padding: 10px; 
+		
+	}
+	.b-ayshe-grey-header__item p{
+		width: 100%;
+		display: block;
+	}
+	.b-ayshe-headphones__sliding-block img{
+		max-width: 100%;
+		height: auto;
+	}
+	
+	.b-ayshe-digits-heading{
+		font-size: 40px;
+	}
+	.b-ayshe-bottom-header--methodology{
+		font-size: 31px;
+		width: 100%;
+	}
+	.b-ayshe-bottom-header--sign-up input{
+		width: 100%;
+	}
+	.b-ayshe-header-main-heading,.b-ayshe-advantages h2,.b-ayshe-blue-graphic h2,.b-ayshe-study__headings,.b-ayshe-online h2,.b-ayshe-stream h2,.b-ayshe__programme--heading{
+		font-size: 22px;
+	}
+	.b-ayshe-header-main-heading{
+		line-height: 35px;
+	}
+	.b-ayshe__programme--steps span{
+		font-size: 33px;
+	}
+	.b-ayshe__red-inner p{
+		font-size: 25px;
+	}
+	.b-ayshe__red-inner a{
+		width: 100%;
+	}
+}
+@media (max-width: 366px){
+	#b-ayshe-main{
+		width: 100%;
+	}
+	#b-ayshe-header{
+		width: 100%;
+		overflow: hidden;
+	}
+	.b-ayshe-top-header-heading{
+		font-size: 41px;
+	}
+	.b-ayshe-bottom-header--sign-up--wrapper{
+		width: 100%;
+	}
+	.b-ayshe-bottom-header--sign-up form:after{
+		left: 220px;
+	}
+}
+
+
+
+
+/* -------------------- Ayshe media queries END --------------------------- */ 

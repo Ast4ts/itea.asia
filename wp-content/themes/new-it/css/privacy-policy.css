@@ -1,0 +1,27 @@
+.privacy-policy {
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+article >  h1 {
+    font-size: 5em;
+    font-weight: 700;
+    color: #d31f45;
+    padding-bottom: 2%;
+    text-align: center;
+}
+article >  p {
+    color: #133b54;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+article > h2 {
+    font-size: 1.8em;
+    color: #133b54;
+    text-align: center;
+}
+article > h3 {
+    font-weight: 700;
+    color: #133b54;
+}
+
+

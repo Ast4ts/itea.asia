@@ -1,0 +1,16 @@
+@font-face{font-family:'pf_agora_sans_probold';src:url('pf_agora_sans_pro_bold-webfont.eot');src:url('pf_agora_sans_pro_bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('pf_agora_sans_pro_bold-webfont.woff') format('woff'),
+url('pf_agora_sans_pro_bold-webfont.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'pf_agora_sans_proitalic';src:url('pf_agora_sans_pro_italic-webfont.eot');src:url('pf_agora_sans_pro_italic-webfont.eot?#iefix') format('embedded-opentype'),
+url('pf_agora_sans_pro_italic-webfont.woff') format('woff'),
+url('pf_agora_sans_pro_italic-webfont.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'pf_agora_sans_promedium';src:url('pf_agora_sans_pro_medium_regular-webfont.eot');src:url('pf_agora_sans_pro_medium_regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('pf_agora_sans_pro_medium_regular-webfont.woff') format('woff'),
+url('pf_agora_sans_pro_medium_regular-webfont.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'pf_agora_sans_proregular';src:url('pf_agora_sans_pro_regular-webfont.eot');src:url('pf_agora_sans_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('pf_agora_sans_pro_regular-webfont.woff') format('woff'),
+url('pf_agora_sans_pro_regular-webfont.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face{font-family:'ArialNarrow';src:url('ArialNarrow.eot?') format('eot'),
+url('ArialNarrow.woff') format('woff'),
+url('ArialNarrow.ttf') format('truetype'),
+url('ArialNarrow.svg#ArialNarrow') format('svg');}

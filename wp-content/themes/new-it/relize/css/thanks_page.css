@@ -1,0 +1,236 @@
+.thanks-block {
+	background-color: #0bac7c;
+	background-repeat: no-repeat;
+	background-position: 49% -5%;
+	height: 458px;
+	    width: 78%;
+	border-radius: 5px;
+	margin: 0 auto;
+	position:relative;
+}
+
+.thanks-block h1 {
+bottom: 29%;
+    left: 16%;
+	position: absolute;
+	text-align: center;
+	color: white;
+	font-size: 26px;
+}
+
+span.heading{
+	display: block;
+}
+
+.button-block {
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+bottom: 17px;
+    left: 195px;
+}
+
+.button-block a {
+	color:#0bac7c;
+    border-radius: 5px;
+    font-size: 13px;
+	background-color: white;
+	text-transform: uppercase;
+	display: inline-block;
+    opacity: 1;
+}
+
+.button-block a.first-btn:hover,.button-block a.first-btn:active,
+.button-block a.second-btn:hover,.button-block a.second-btn:active {
+    opacity:0.7;
+}
+
+
+.button-block a.first-btn{
+		    padding: 11px 31px 11px 18px;
+		margin-right: 20px;
+}
+
+.button-block a.second-btn{
+       padding: 11px 58px 11px 57px;
+}
+
+
+.button-block a:hover, .button-block a:active{
+	text-decoration:none;
+}
+
+@media (max-width: 1280px) {
+
+.button-block {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    bottom: 48px;
+    left: 11%;
+}
+
+.button-block a {
+    color: #0bac7c;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: white;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.thanks-block h1 {
+    bottom: 29%;
+    left: 2%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+.button-block a.second-btn {
+    padding: 11px 58px 11px 57px;
+    margin-top: 16px;
+}
+}
+
+@media (max-width: 992px) {
+	.button-block a {
+    color: #0bac7c;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: white;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+	.button-block {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    bottom: 17px;
+        left: 24%;
+}
+}
+
+@media (max-width: 768px) {
+
+
+
+	.button-block {
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    bottom: 17px;
+    left: 24%;
+}
+
+.thanks-block h1 {
+    bottom: 29%;
+    left: 2%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+.button-block a.second-btn {
+    padding: 11px 58px 11px 57px;
+    margin-top: 16px;
+}
+}
+
+
+
+@media (max-width: 667px) {
+
+.button-block a.second-btn {
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
+}
+
+	.button-block a {
+    font-size: 11px;
+  }
+
+.button-block a.first-btn {
+    padding: 11px 31px 11px 18px;
+    margin-right: 0;
+}
+
+  .button-block {
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+	bottom: 17px;
+         left: 24%;
+}
+
+	.thanks-block h1 {
+    bottom: 32%;
+    left: 3%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+}
+
+}
+
+
+@media (max-width: 655px) {
+	.thanks-block {
+	background-size: 82%;
+	     background-position: 49% 3%;
+	    width: 100%;
+	    height: 360px;
+	}
+}
+
+@media (max-width:420px) {
+
+	.thanks-block h1 {
+    bottom: 32%;
+    left: 3%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 19px;
+}
+
+.button-block a.second-btn {
+    padding: 10px 50px 10px 50px;
+    margin-top: 10px;
+}
+
+	.button-block a {
+    font-size: 11px;
+  }
+
+.button-block a.first-btn {
+    padding: 11px 31px 11px 18px;
+    margin-right: 0;
+}
+
+  .button-block {
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+	bottom: 17px;
+        left: 19%;
+}
+}
+
+
+@media (max-width:374px) {
+
+
+  .button-block {
+	position: absolute;
+	bottom: 0;
+	left: 110px;
+	bottom: 17px;
+  left: 13%;
+}
+}

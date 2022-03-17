@@ -1,0 +1,1148 @@
+body {
+    font-family: Roboto, sans-serif; 
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+p{
+	margin: 0 auto;
+}
+.b-survey-wrapper{
+	width: 1280px;
+	margin: auto;
+}
+.container{
+	width: 100%;
+	float: left;
+}
+.b-survey-holder{
+	background: white;
+    float: left;
+    width: 100%;
+
+}
+.b-survey-holder-top{
+	width: 100%;
+	height: 60px;
+	background-color: #1a1a1a;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.b-survey-heading{
+	color: #133b54;
+	font-size: 35px;
+	font-weight: 700;
+	margin: 35px 0;
+}
+.b-resume-form-wrapper{
+	display: none;
+}
+/* animated circles BEGIN */
+	.red-circle-wrapper{
+		width: 12.666667%;
+		padding-top: 30px;
+	}
+	.big-grey-circle-wrapper{
+		padding-top: 36px;
+		width: 12.666667%;
+	}
+	.red-circle p{
+		color: white;
+		text-align: center;
+		font-size: 48px;
+		font-weight: 700;
+		padding-top: 5px;
+	}
+	.red-circle p span{
+		font-size: 24px;
+		display: block;
+		color: white;
+		text-align: center;
+		width: 100%;
+		padding-top: 32px;
+		position: absolute;
+		left: 0;
+	    top: 27px;
+	    z-index: 10;
+	    font-weight: 700;
+	}
+	.big-grey-circle p{
+		color: white;
+		text-align: center;
+		font-size: 48px;
+		font-weight: 700;
+		padding-top: 5px;
+	}
+	.big-grey-circle p span{
+		font-size: 24px;
+		display: block;
+		color: white;
+		text-align: center;
+		width: 100%;
+		left: auto;
+		padding-top: 26px;
+		position: absolute;
+	    top: 27px;
+	    z-index: 10;
+	    font-weight: 700;
+	}
+	.big-grey-circle{
+		width: 104px;
+		height: 104px;
+		background-color: #bfbfbf;
+		border-radius: 50%;
+	}
+	/* animated border begin */
+		.red-circle-inner-container {
+		    width:116px;
+		    height:116px;
+		    position: relative;
+		    padding-top: 6px;
+		    margin: auto;
+		}
+		.big-grey-circle-inner-container{
+			cursor: pointer;
+			width:104px;
+		    height:104px;
+		    position: relative;
+		    margin: auto;
+		}
+		.red-arc {
+		    width:116px;
+		    height:116px;
+		    border-radius:50%;
+		    border:2px dotted #e11030;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    -moz-box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		}
+		.red-archideLeft .red-arc {
+		    top: auto;
+		    bottom: 0;
+		    right: auto;
+		    left: 0;
+		}
+		.red-archide {
+		    width:50%;
+		    height:0%;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    overflow: hidden;
+		    animation: appear 1s ease-in 1s forwards;
+		}
+		.red-archideLeft {
+		    top: auto;
+		    bottom: 0;
+		    right: auto;
+		    left: 0;
+		    animation: appear 1s ease-out forwards;
+		}
+		@keyframes appear {
+		    to {
+		        height: 100%;
+		    }
+		}
+		.red-circle{
+			width: 104px;
+			height: 104px;
+			border-radius: 50%;
+			background-color: #e11030;
+			margin: auto;
+		}
+	/* animated border end */
+	.red-circle-desc{
+		color: #133b54;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 21px;
+		width: 100%;
+		text-align: center;
+		padding-top: 15px;
+		margin: auto;
+	}
+	.big-grey-circle-desc{
+		color: #bfbfbf;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 21px;
+		width: 100%;
+		text-align: center;
+		padding-top: 15px;
+		margin: auto;
+		
+	}
+	.grey-circle span{
+		width: 10px;
+	    height: 10px;
+	    border-radius: 50%;
+	    background-color: #bfbfbf;
+	    top: 50%;
+	    margin-top: -5px;
+	    left: 11px;
+	    position: absolute;
+	}
+	.grey-circle div{
+		width: auto;
+	    position: relative;
+	    margin: auto;
+	    height: 100%;
+	}
+	.grey-circle span:nth-child(2) {
+	    margin-left: 20px;
+	}
+	.grey-circle span:nth-child(3) {
+	    margin-left: 40px;
+	}
+	.steps-container--inner > div {
+	    float: left;
+	}
+	.grey-circle {
+	    width: 8.33333333%;
+	}
+	.grey-circle {
+	    height: 185px;
+	}
+	.steps-container--inner{
+		width: 100%;
+		padding-left: 0;
+	}
+/* animated circles END */
+
+.b-survey-step-holder{
+	
+	padding-top: 22px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.big-grey-circle-wrapper{
+	padding-left: 0;
+	padding-right: 0;
+}
+.steps-container{
+	width: 100%;
+	padding-bottom: 65px;
+	float: left;
+	padding-left: 55px;
+}
+
+.b-survey-left-heading h3{
+	color: #133b54;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: right;
+}
+
+#b-survey-main,
+#b-survey-main-thanks{
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: #f9fafb;
+	padding-bottom: 60px;
+}
+#b-survey-main-thanks{
+	float: none;
+	display: flex;
+	height: 100vh;
+	overflow: auto;
+}
+.b-resume-input-div{
+	position: relative;
+}
+.b-resume-input-div input{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+    padding: 60px 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+}
+.b-resume-input-div span{
+	position: absolute;
+    left: 0;
+    top: 27px;
+    z-index: 10;
+    font-weight: 700;
+  /*  color: #133b54;*/
+}
+.completed-courses .tagit.ui-corner-all{
+	margin-top: 25px;
+    border-radius: 5px;
+}
+.b-resume-form span{
+	position: absolute;
+    left: 0;
+    top: 27px;
+    z-index: 10;
+    font-weight: 700;
+    color: #bfbfbf;
+}
+.b-resume-form-right-block{
+	padding-top: 0;
+	padding-left: 70px;
+}
+.placeholder{
+	left: 0;
+}
+.b-survey-input-wrapper{
+	width: 90%;
+	margin: auto;
+}
+.b-survey-input-container{
+	width: 100%;
+	float: left;
+	padding-bottom: 50px;
+}
+.b-resume-form-wrapper{
+	border: none;
+	padding-bottom: 0;
+}
+.b-survey-next-btn{
+	width: 100%;
+	float: left;
+}
+
+.survey-select{
+	height: 112px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.b-survey-select-placeholder{
+	top: 26px;
+    color: rgb(191, 191, 191);
+    left: 30px;
+    position: absolute;
+    font-weight: 700;
+}
+.survey-select select{
+	position: absolute;
+	top: 55px;
+	border-radius: 4px;
+	width: 100%;
+	height: 40px;
+	padding-left: 15px;
+	cursor: pointer;
+	outline: none;
+}
+.survey-select select{
+	/*color: rgb(19, 59, 84);*/
+	font-weight: 700;
+	font-size: 15px;
+}
+.b-survey-job-comment{
+	padding-left: 0px;
+    padding-right: 0px;
+}
+.b-survey-job-comment textarea{
+    vertical-align: middle;
+    resize: none;
+    width: 100%;
+    margin: 0px;
+    font-size: 18px;
+    height: 55px;
+    padding-top: 25px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    overflow: hidden;
+    outline: none;
+}
+/* validation styles begin */
+	
+	.b-resume-form-right-block input.survey_error{
+		border-bottom: 1px solid rgb(225, 16, 48);
+	}
+	.b-resume-form-right-block input.survey_not_error{
+		border-bottom: 1px solid #00a651;
+	}
+	.regular_input.survey_error{
+		border-bottom: 1px solid rgb(225, 16, 48);
+	}
+	.regular_input.survey_not_error{
+		border-bottom: 1px solid #00a651;
+	}
+
+/* validation styles end */
+
+#survey-first-step-btn, #survey-fifth-step-btn button {
+    height: 40px;
+    background-color: #d31f45;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    /*margin-top: 40px;*/
+    width: 50%;
+    color: white;
+    font-size: 15px;
+	font-weight: 700;
+    outline: none;
+    border: none;
+}
+#survey-first-step-btn a, #survey-fifth-step-btn a{
+	color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+}
+
+.b-survey-actual input[type=checkbox],.b-survey-job-search input[type=radio] {
+    display: none;
+}
+.b-survey-actual label:before, .b-survey-job-search label:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    
+    position: absolute;
+    left: 0;
+    bottom: 17px;
+    background-color: #F3F3F3;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, .3), 1px 1px 4px 4px rgba(255, 255, 255, .8);
+}
+
+.b-survey-actual input[type=checkbox]:checked + label:before, .b-survey-job-search input[type=radio]:checked + label:before {
+    content: url(../img/icons/servey-green.png);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
+}
+.b-survey-actual p, .b-survey-job-search p{
+	color: #868686;
+	font-size: 16px;
+	font-weight: 700;
+}
+.b-survey-actual label, .b-survey-job-search label{
+	margin: 12px 0;
+	padding-left: 20px;
+}
+.survey-fill-out-wrapper span{
+	display: block;
+		color: #D31F45;
+		font-size: 20px;
+		margin: auto;
+    	font-weight: 700;
+    	position: static;
+    	text-align: center;
+    	padding-bottom: 40px;
+}
+.survey-fill-out-wrapper{
+	float: left;
+	width: 100%;
+}
+.b-survey-choose-c{
+	margin-bottom: 25px;
+	margin-top: 25px;
+	color: #133b54;
+	font-size: 15px;
+	font-weight: 700;
+}
+.b-survey-choose-c-last {
+	margin-bottom: 5px;
+	margin-top: 25px;
+	color: #133b54;
+	font-size: 15px;
+	font-weight: 700;
+}
+.b-survey-choose-c a{
+	font-size: 15px;
+    padding-left: 10px;
+    color: #868686;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.b-survey-choose-c a:hover{
+    color: #e11030;
+    text-decoration: underline;
+}
+.b-resume-input-div.dates{
+	padding-left: 0;
+} 
+#survey-first-step-btn{
+		height: 40px;
+		background-color: #d31f45;
+		text-align: center;
+		line-height: 40px;
+		float: left;
+		margin-top: 40px;
+		width: 100%;
+	}
+	#survey-first-step-btn a{
+		color: white;
+		text-decoration: none;
+		font-size: 15px;
+		position: relative;
+		font-weight: 700;
+		cursor: pointer;
+		display: block;
+	}
+	#survey-first-step-btn span{
+		position: absolute;
+		display: block;
+		width: 20px;
+		left: 50%;
+		top: 0;
+		margin-left: 80px;
+	}
+	#survey-second-step-btn, #survey-treriy-step-btn, #survey-fourth-step-btn, #survey-fifth-step-btn{
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		float: left;
+		margin-top: 40px;
+		width: 100%;
+	}
+	#survey-second-step-btn a, #survey-treriy-step-btn a, #survey-fourth-step-btn a, #survey-fifth-step-btn a{
+		color: white;
+		font-size: 15px;
+		position: relative;
+		font-weight: 700;
+		cursor: pointer;
+		width: 50%;
+		display: inline-block;
+		background-color: #d31f45;
+		float: left;
+		text-decoration: none;
+	}
+	#survey-second-step-btn a:first-child, #survey-treriy-step-btn a:first-child, #survey-fourth-step-btn a:first-child, #survey-fifth-step-btn a:first-child{
+		background-color: #133b54;
+	}
+	#survey-second-step-btn span, #survey-third-step-btn span, #survey-treriy-step-btn span, #survey-fourth-step-btn span, #survey-fifth-step-btn span{
+		position: absolute;
+		display: block;
+		width: 20px;
+		left: 50%;
+		top: 0;
+		margin-left: 90px;
+	}
+	#survey-third-step-btn span{
+		top: 9px;
+	}
+	#survey-second-step-btn a:first-child span, #survey-third-step-btn a:first-child span, #survey-treriy-step-btn a:first-child span, #survey-fourth-step-btn a:first-child span, #survey-fifth-step-btn a:first-child span{
+		right: 50%;
+		margin-right: 90px;
+    	top: -2px;
+    	margin-left: auto;
+	}
+	#survey-third-step-btn a:first-child{
+		width: 50%;
+		float: left;
+		background-color: #133b54; 
+		height: 40px;
+		line-height: 40px;
+		font-size: 15px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: none;
+	}
+	#survey-third-step-wrapper input{
+		padding-right: 15px;
+	}
+	
+	#survey-third-step-btn a{
+		position: relative;
+		width: 50%;
+		display: inline-block;
+		float: left;
+		cursor: pointer;
+		text-decoration: none;
+		color: white;
+	}
+	.b-resume-input-div.dates:last-of-type{
+		padding-right: 0;
+	}
+
+/* star rate BEGIN */
+.rateit {
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    margin-top: 20px;
+    margin-left: -47px;
+}
+.b-survey-rate-holder{
+	padding-left: 0;
+	padding-top: 26px;
+	padding-bottom: 40px;
+}
+.b-survey-rate-desc{
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+}
+.rateit .rateit-range
+{
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+    background: url(../img/icons/star.png);
+    height: 29px;
+    outline: none;
+}
+
+.rateit .rateit-range * {
+    display:block;
+}
+
+/* for IE 6 */
+* html .rateit, * html .rateit .rateit-range
+{
+    display: inline;
+}
+
+/* for IE 7 */
+* + html .rateit, * + html .rateit .rateit-range
+{
+    display: inline;
+}
+
+.rateit .rateit-hover, .rateit .rateit-selected
+{
+    position: absolute;
+    left: 0px;
+}
+
+.rateit .rateit-hover-rtl, .rateit .rateit-selected-rtl
+{
+    left: auto;
+    right: 0px;
+}
+
+.rateit .rateit-hover
+{
+    background: url(../img/icons/star.png) left 56px;
+}
+
+.rateit .rateit-hover-rtl
+{
+    background-position: right -45px;
+}
+
+.rateit .rateit-selected
+{
+    background: url(../img/icons/star.png) left -28px;
+}
+
+.rateit .rateit-selected-rtl
+{
+    background-position: right -28px;
+}
+
+.rateit .rateit-preset
+{
+    background: url(../img/icons/star.png) left -61px;
+}
+
+.rateit .rateit-preset-rtl
+{
+    background: url(../img/star.png) left -48px;
+}
+
+.rateit button.rateit-reset
+{
+    background: url(delete.png) 0 0;
+    width: 16px;
+    height: 16px;
+    display: -moz-inline-box;
+    display: inline-block;
+    float: left;
+    outline: none;
+    border:none;
+    padding: 0;
+}
+
+.rateit button.rateit-reset:hover, .rateit button.rateit-reset:focus
+{
+    background-position: 0 -16px;
+}
+/*part thank yuo begin*/
+.b-thank-you {
+	text-align: center;
+	color: #133b54;
+}
+.b-thank-you-logo {
+    padding: 45px 0px 60px 0px;
+}
+.b-thank-you-icon-ok {
+	margin-bottom: 35px;
+}
+.b-thank-you-about p:first-child {
+	width: 700px;
+	font-size: 63px;
+	font-weight: 900;
+	line-height: 60px;
+}
+.b-thank-you-about p:last-of-type {
+	margin-bottom: 30px;
+}
+.b-thank-you-about p {
+	color: #133b54;
+	font-family: Helvetica, Aria, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 10px;
+	line-height: 1.1em;
+	width: 550px;
+}
+a.b-thank-you-fb-link {
+	background-color: #3a4268;
+	border-radius: 7px;
+	font-size: 16px;
+	padding: 13px 58px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	margin: 0 10px;
+}
+a.b-thank-you-fb-link:hover {
+	background-color: #2e3452;
+}
+a.b-thank-you-fb-link span::after {
+	content: url(../../relize/img/icons/vector-smart-f.png);
+	position: absolute;
+	right: 21px;
+}
+.b-thank-you-home{
+	padding-top: 53px;
+	padding-bottom: 25px;
+}
+.b-thank-you-home a {
+	color: #ed1c24;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+/* tag-it styling first cloud BEGIN */
+
+	#b-survey-second-step ul.tagit li.tagit-choice {
+		width: auto;
+		height: 37px;
+	}
+	#b-survey-second-step .tagit-choice-editable,ul.tagit li.tagit-choice {
+		padding: 4px 17px 4px 14px;
+		background: white;
+		border: 1px solid #b2b2b2;
+	}
+	#b-survey-second-step .tagit-label{
+		position: relative;
+	    left: -5px;
+	    top: 2.4px;
+    	text-transform: capitalize;
+	    padding-right: 6px;
+	    padding-left: 4px;
+	    color: black;
+	    font-size: 15px;
+    	font-family: Roboto, sans-serif;	
+		font-weight: 700;
+	}
+	#b-survey-second-step ul.tagit li.tagit-choice .tagit-close{		
+		right:20px;
+    	top: -7px;
+	}
+	#b-survey-second-step ul.tagit li.tagit-choice .tagit-close .text-icon{
+		font-size: 20px;
+	    line-height: 13px;
+	    color: black;
+	}
+/* tag-it styling first cloud END */
+
+
+/* 	MEDIA QUERIES BEGIN */
+
+	/* 1280 */
+	 @media (max-width: 1280px){
+		.b-survey-wrapper{
+			width: 100%;
+		}
+		.steps-container{
+			padding-left: 15px;
+		}
+		.grey-circle span{
+			left: 0;
+		}
+		#b-survey-third-step .b-resume-form-right-block{
+			padding-left: 70px;
+		} 
+		#b-survey-third-step .b-survey-left-heading h3{
+			text-align: center;
+		}
+	 }
+
+	 /* 1024px */
+	 @media (max-width: 1024px){
+		.steps-container{
+			padding-left: 0;
+		}
+
+	 }
+
+	 /* 991px */
+	 @media (max-width: 991px){
+		.grey-circle{
+			display: none;
+		}
+		.b-survey-left-heading h3{
+			text-align: center;
+		}
+		.big-grey-circle-wrapper, .red-circle-wrapper{
+			/*width: 20%;*/
+			width: 33%;
+		}
+		.b-resume-input-div.dates{
+			padding-right: 0;
+		}
+		.b-resume-form-right-block{
+			padding-left: 15px;
+		}
+		.rateit .rateit-range{
+			background: url(../img/icons/star-l.png);
+		}
+		.rateit .rateit-hover
+		{
+		    background: url(../img/icons/star-l.png) left 56px;
+		}
+
+		.rateit .rateit-hover-rtl
+		{
+		    background-position: right -45px;
+		}
+
+		.rateit .rateit-selected
+		{
+		    background: url(../img/icons/star-l.png) left -28px;
+		}
+
+		.rateit .rateit-selected-rtl
+		{
+		    background-position: right -28px;
+		}
+
+		.rateit .rateit-preset
+		{
+		    background: url(../img/icons/star-l.png) left -61px;
+		}
+
+		.rateit .rateit-preset-rtl
+		{
+		    background: url(../img/star-l.png) left -48px;
+		}
+		.rateit{
+			margin-left: 0;
+		}
+		.b-survey-heading{
+			text-align: center;
+		}
+		/*Bohdan style begin*/
+		.red-circle-wrapper{
+			padding-top: 24px;
+		}
+
+		.red-circle-inner-container {
+		    width: 104px;
+		    height: 104px;
+		}
+		.red-circle {
+		    width: 92px;
+		    height: 92px;
+		}
+		.red-arc {
+		    width: 104px;
+		    height: 104px;
+		}
+		.red-circle-wrapper{
+			padding-top: 26px;
+		}
+		.big-grey-circle-wrapper{
+	 		padding-top: 26px;
+	 	}
+	 	.b-survey-heading{
+		    font-size: 30px;
+	        margin: 25px 0;
+		}
+	 	.red-circle-desc,
+		.big-grey-circle-desc {
+			font-size: 15px;
+		}
+		.steps-container{
+			padding-bottom: 35px;
+		}
+		.survey-fill-out-wrapper span{
+		    padding-bottom: 15px;
+		}
+		.b-resume-input-div.dates:last-of-type div{
+			padding-bottom: 0px;
+		}
+		.b-survey-input-container{
+		    padding-bottom: 30px;
+		}
+		/*Bohdan style end*/
+	}
+	 /* 660px */
+	@media (max-width: 768px){
+		.b-resume-input-div.b-survey-actual{
+			height: 40px;
+		}
+		.b-resume-input-div.b-survey-actual label:before{
+			bottom: 0px; 
+    		top: 14px;
+		}
+		.b-survey-actual p, .b-survey-job-search p{
+			font-size: 12px;
+		}
+	}
+	@media (max-width: 660px){
+	 	.big-grey-circle-wrapper, .red-circle-wrapper{
+	 		width: 33%;
+	 	}
+	 	/*.big-grey-circle-wrapper{
+	 		padding-top: 42px;
+	 	}*/
+	 	#survey-second-step-btn a, #survey-fourth-step-btn a, #survey-treriy-step-btn a, #survey-fifth-step-btn a, #survey-fifth-step-btn button{
+	 		width: 100%;
+	 	}
+	 	
+
+	 }
+	/* 480px */
+	@media (max-width: 480px){
+	 	.big-grey-circle-wrapper, .red-circle-wrapper{
+	 		width: 50%;
+	 	}
+	 	.b-survey-rate-holder{
+	 		padding-right: 0;
+	 	}
+		#b-survey-third-step .b-resume-form-right-block{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		#b-survey-fourth-step .b-resume-form-right-block {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		/*Bohdan style begin*/
+		.red-circle-wrapper{
+			padding-top: 26px;
+		}
+		.big-grey-circle-wrapper{
+	 		padding-top: 26px;
+	 	}
+
+
+	 	.red-circle-inner-container {
+		    width: 104px;
+		    height: 104px;
+		}
+		.red-circle {
+		    width: 92px;
+		    height: 92px;
+		}
+		.red-arc {
+		    width: 104px;
+		    height: 104px;
+		}
+
+		.b-survey-heading{
+		    font-size: 25px;
+	        margin: 25px 0;
+		}
+		.b-resume-input-div.b-survey-actual,
+		.b-resume-input-div.b-survey-job-search{
+			width: 100%;
+		}
+		.b-survey-actual p, .b-survey-job-search p{
+			font-size: 14px;
+		}
+		
+
+
+		/*part thank yuo end*/
+		/*Bohdan style end*/
+	 }
+	@media (max-width: 320px){
+		.b-thank-you-logo {
+		    padding: 35px 0px 70px 0px;
+		}
+		.b-thank-you-about h1{
+		    font-size: 50px;
+		}
+		.b-thank-you-home {
+		    padding-top: 43px;
+		}
+	}
+
+
+/* MEDIA QUERIES END*/
+
+/* interview part-1 courses selection BEGIN */
+
+div#courses-list {
+    cursor: pointer;
+	font-weight: 700;
+	font-size: 15px;
+    height: 40px;
+    outline: none;
+    padding: 0;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+}
+
+div#courses-list * {
+    text-indent: 15px;
+}
+
+#courses-list input {
+    padding: 0;
+}
+
+#courses-list input:focus {
+    background-color: white;
+}
+
+#courses-list input:-ms-input-placeholder {
+    color: #ccc;
+}
+#courses-list input:-moz-placeholder {
+    color: #ccc;
+}
+#courses-list input::-moz-placeholder {
+    color: #ccc;
+}
+#courses-list input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+div#courses-list .courses-list-set {
+    background-color: white;
+    border: 1px solid #ff7900;
+    display: none;
+    overflow-y: scroll;
+    position: relative;
+    max-height: 408px;
+    z-index: 11;
+}
+
+div#courses-list .courses-list-set.active {
+    display: block;
+}
+
+div#courses-list .courses-list-option {
+    cursor: pointer;
+    line-height: 18px;
+    margin: 1px 0;
+    padding: 0;
+    width: 100%;
+}
+div#courses-list .courses-list-option:hover {
+    background-color: #ff7900;
+    color: white;
+}
+
+div#courses-list .courses-list-option-default {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+}
+
+div#courses-list .arrow {
+    top: 15px;
+    left: 95%;
+}
+/* interview part-1 courses selection END */
+
+/* form required fields { */
+
+.survey-required__label:after {
+	content: ' *';
+	color: #ed1c24;
+}
+
+/* form required fields } */
+
+.b-survey-input__legend {
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+
+/*For tablet + mobile*/
+@media (max-width: 768px) {
+	.b-thank-you-about {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.b-thank-you-about p:first-child,
+	.b-thank-you-about p {
+		width: 100%;
+	}
+	.b-thank-you {
+		width: 90%;
+		margin: 0 auto;
+		overflow-x: hidden;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		overflow-x: hidden;
+	}
+	.b-survey-main-thanks {
+		overflow-x: hidden;
+	}
+}
+@media (max-width: 495px) {
+	.b-thank-you-logo {
+		padding: 30px 0;
+	}
+	.b-thank-you-about p:first-child {
+		font-size: 42px;
+	}
+	a.b-thank-you-fb-link {
+		padding: 13px 49px;
+	}
+}
+
+@media (max-width: 758px) {
+	.fb-two-btns {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.b-thank-you-fb-link {
+		margin-bottom: 20px !important;
+	}
+}

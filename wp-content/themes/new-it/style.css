@@ -1,0 +1,731 @@
+/*
+Theme Name: Education-academy
+Author: UkrInSofT
+Author URI: http://ukrinsoft.com/
+Version: 1.0
+*/
+
+.post h1,
+.post h2 {
+    margin-bottom: 14px;
+}
+
+#header {
+    height: auto;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 66px;
+    height: 100px;
+    background: url(images/bg/logo3.png) no-repeat 0 0;
+    margin-right: 85px;
+    margin-left: 40px;
+}
+
+#header .enter {
+    padding-top: 40px;
+}
+
+#header .nav {
+    padding-top: 15px;
+}
+
+.slogan {
+    font-size: 24px;
+    line-height: 32px;
+    width: 700px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.course-info {
+    width: 700px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.aligncenter {
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.wp-caption {
+    position: relative;
+    width: auto !important;
+}
+
+.wp-caption img {
+    margin: 0 !important;
+    display: block;
+}
+
+.wp-caption .wp-caption-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background: url(images/bg/bottom2.png) repeat 0 0;
+    padding: 8px 15px;
+    margin: 0 !important;
+}
+
+.block-lang {
+    display: none;
+}
+
+.qtrans_language_chooser {
+    overflow: hidden;
+    margin-bottom: 7px;
+    text-align: right;
+}
+
+.qtrans_language_chooser li {
+    display: inline-block;
+    display: inline;
+    width: 24px;
+    height: 16px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.qtrans_language_chooser li+li {
+    margin-left: 17px;
+}
+
+.qtrans_language_chooser li:hover,
+.qtrans_language_chooser li.active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.qtrans_language_chooser a.qtrans_flag {
+    width: 24px;
+    height: 16px;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#report .td-block-in {
+    padding: 12px;
+}
+
+#report .course_list {
+    width: 100%;
+}
+
+#report .course_list th {
+    line-height: 22px;
+    font-weight: 100;
+    padding: 0 10px 14px;
+    text-align: left;
+    font-family: 'ArialNarrow';
+    font-size: 20px;
+    color: #666;
+    background: none;
+    border: none;
+}
+
+#report .course_list td {
+    font-family: 'ArialNarrow';
+    font-size: 20px;
+    color: #666;
+    line-height: 22px;
+    padding: 0 10px 6px;
+    background: none;
+    border: none;
+}
+
+#report .course_list td:first-child {
+    white-space: nowrap;
+}
+
+#report .course_list td a {
+    color: #0098a6;
+    text-decoration: none;
+}
+
+#report .course_list td a:hover {
+    text-decoration: underline;
+}
+
+#report .course_list td a.course_name {
+    color: #666;
+    text-decoration: none;
+}
+
+#report .course_list td a.course_name:hover {
+    color: #0098a6;
+}
+
+.education-loan {
+    font-size: 18px;
+    line-height: 20px;
+    color: #242021;
+    font-family: 'ArialNarrow';
+}
+
+.education-loan h4 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #00c759;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    margin-bottom: 4px;
+}
+
+.one_half p,
+.one_half ul {
+    margin-right: 15px;
+}
+
+.education-loan p {
+    margin-bottom: 20px;
+}
+
+.education-loan ul {
+    list-style: none;
+}
+
+.education-loan ul li {
+    background: url(images/bg/li-bg2.jpg) no-repeat left 10px;
+    padding-left: 10px;
+}
+
+.description-classes h3 {
+    font-size: 24px;
+    line-height: 26px;
+    color: #231f20;
+    margin-bottom: 14px;
+    font-weight: normal;
+}
+
+.skype-block-left {
+    width: 484px;
+}
+
+.skype-block-left p,
+.skype-block-left ul {
+    margin-bottom: 15px;
+}
+
+.section_page {
+    background: none;
+    height: auto;
+    padding: 0;
+}
+
+#wrapper .section_page .block-links {
+    margin-bottom: 0;
+}
+
+.partnerships {
+    min-height: 180px;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.white {
+    background: #fff;
+}
+
+.cont-in.white {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.post_title h2 {
+    margin-bottom: 20px;
+    font: 20px/22px bold Arial, Helvetica, sans-serif;
+}
+
+.gallery .gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery .gallery-icon {
+    display: table-cell;
+    height: 90px;
+    width: 1000px;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    padding: 0 10px;
+}
+
+.gallery .gallery-icon img {
+    border: none !important;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.gallery .gallery-caption {
+    font-size: 13px;
+    color: #737373;
+    line-height: 16px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.big_block_content .b-content ul li {
+    background: url("images/list_style_typ_sd.png") 27px 22px no-repeat;
+}
+
+/*Typ1 list*/
+.big_block_content .b-content ul.typ_1 li,
+.big_block_content .b-content ul.typ_4 li {
+    background: url("images/list_style_typ_sd.png") 27px 22px no-repeat;
+}
+
+/*Typ2 list*/
+.big_block_content .b-content ul.typ_2 li {
+    background: url("images/list_style_typ_lc.png") 27px 22px no-repeat;
+}
+
+/*Typ3 list*/
+.big_block_content .b-content ul.typ_3 li {
+    background: url("images//list_style_typ_ts.png") 27px 22px no-repeat;
+}
+
+/*Typ4 list*/
+.big_block_content .b-content ul.typ_6 li {
+    background: url("images//list_style_typ_rd.png") 27px 22px no-repeat;
+}
+
+/*Typ5 list*/
+.big_block_content .b-content ul.typ_7 li {
+    background: url("images//list_style_typ_eleks_basic.png") 27px 22px no-repeat;
+}
+
+/*Typ6 list*/
+.big_block_content .b-content ul.typ_8 li {
+    background: url("images//list_style_typ_ft.png") 27px 21px no-repeat;
+}
+
+/*Typ7 list*/
+.big_block_content .b-content ul.typ_5 li {
+    background: url("images//list_style_typ_wm.png") 27px 21px no-repeat;
+}
+
+.post_courses h1 {
+    font-size: 34px;
+    color: #7d7d7d;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #303131;
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+
+.fvendors_table {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+.fvendors_table td {
+    padding: 20px 10px;
+    width: 25%;
+    vertical-align: top;
+}
+
+.fvendors_table .fvendor_icon {
+    text-align: center;
+}
+
+.fvendors_table .fvendor_title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #898989;
+    line-height: 27px;
+    text-align: center;
+}
+
+.fvendors_table .fvendor_title a {
+    text-decoration: none;
+    color: #898989;
+}
+
+.fvendors_table .fvendor_title a:hover {
+    text-decoration: underline;
+}
+
+.choice-study .choice-select .ffSelectMenuWrapper {
+    top: 52px !important;
+    left: 2px;
+}
+
+.section5 .choice-study .choice-select .ffSelectMenuWrapper {
+    top: auto !important;
+    bottom: 52px !important;
+    left: 2px;
+}
+
+.section5 .choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG {
+    -webkit-box-shadow: 3px -5px 4px #e2e2e2;
+    -moz-box-shadow: 3px -5px 4px #e2e2e2;
+    box-shadow: 3px -5px 4px #e2e2e2;
+}
+
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li:first-child {
+    display: none;
+}
+
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li+li {
+    background: none;
+}
+
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li+li+li {
+    background: url(images/bg/li-bg.jpg) repeat-x 0 top;
+}
+
+.section1 {
+    position: relative;
+    z-index: 5;
+}
+
+.post ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.certification {
+    padding-top: 10px;
+}
+
+.footer-logo {
+    margin-left: 46px;
+    margin-right: 92px;
+}
+
+.footer-nav li {
+    margin-right: 31px;
+}
+
+.footer-nav .sub-menu {
+    display: none;
+}
+
+.courses_table_wrap {
+    width: 536px;
+    margin-left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.courses_table {
+    border-radius: 10px;
+    border-spacing: 0;
+    padding: 0;
+    width: 536px;
+}
+
+.courses_table th {
+    background: #f9f9f9;
+    text-align: left;
+    padding: 5px 8px;
+    color: #107885;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.courses_table td {
+    background: #cce2f7;
+    padding: 3px 8px;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.courses_table .course_table_row+.course_table_row td {
+    border-top: 1px dashed #8fb6bd;
+}
+
+.courses_table .course_table_row td+td {
+    border-left: 1px dashed #8fb6bd;
+}
+
+.courses_table .course_table_subhead td {
+    border-bottom: 2px solid #8fb6bd;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.courses_table .course_table_price td {
+    border-top: 2px solid #8fb6bd;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.shedule_page {
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+
+.shedule_page h1 {
+    color: #0197a8;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tabs_box {
+    display: none;
+}
+
+.tabs_box.visible {
+    display: block;
+}
+
+.shedule_tabs {
+    list-style: none;
+    height: 36px;
+    background: url(images/shedule_shadow.png) no-repeat 0 25px;
+}
+
+.shedule_tabs li {
+    float: left;
+    position: relative;
+    padding-right: 11px;
+    z-index: 5;
+    background: url(images/shedule_tabs.png) no-repeat 0 0;
+}
+
+.shedule_tabs li+li {
+    margin-left: -37px;
+    z-index: 4;
+}
+
+.shedule_tabs li+li+li {
+    z-index: 3;
+}
+
+.shedule_tabs li+li+li+li {
+    z-index: 2;
+}
+
+.shedule_tabs li+li+li+li+li {
+    z-index: 1;
+}
+
+.shedule_tabs li a {
+    display: block;
+    width: 207px;
+    text-align: center;
+    padding-top: 6px;
+    line-height: 30px;
+    height: 30px;
+    color: #0098a8;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.shedule_tabs li.current,
+.shedule_tabs li:hover {
+    z-index: 8;
+}
+
+.shedule_tabs li.current a,
+.shedule_tabs li:hover a {
+    color: #fff;
+    text-decoration: underline;
+    background: url(images/shedule_tabs.png) no-repeat 0 -37px;
+}
+
+.shedule_filter {
+    background: #056d76 url(images/shedule_filter.png) repeat-x 0 0;
+    padding: 23px 44px 4px;
+    margin-bottom: 2px;
+}
+
+.shedule_filter .filter_row {
+    height: 24px;
+    margin-bottom: 18px;
+}
+
+.shedule_filter .filter_row label {
+    float: left;
+    width: 190px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.shedule_filter select.select-box {
+    width: 708px;
+}
+
+.shedule_filter .selectBox-dropdown {
+    float: right;
+}
+
+.shedule_table {
+    width: 100%;
+    padding: 0;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.shedule_table th {
+    line-height: 24px;
+    padding: 8px 10px;
+    text-align: left;
+    color: #006b73;
+    font-size: 16px;
+}
+
+.shedule_table td {
+    line-height: 20px;
+    padding: 10px;
+    background: #fff url(images/shedule_table.png) repeat-x 0 bottom;
+    background-size: contain;
+}
+
+.shedule_table td+td,
+.shedule_table th+th {
+    border-left: 2px solid #fff;
+    text-align: center;
+}
+
+.shedule_table td h2 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #006b73;
+}
+
+.shedule_table td h2 a {
+    color: #006b73;
+}
+
+select.select-box {
+    width: 200px;
+}
+
+.selectBox-dropdown {
+    position: relative;
+    border: none;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: #5d5d5d;
+    outline: none;
+    vertical-align: middle;
+    background: #fff;
+    cursor: default;
+    line-height: 22px;
+    font-size: 15px;
+    height: 24px;
+    border-radius: 9px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.64);
+}
+
+.selectBox-dropdown:hover {
+    text-decoration: none;
+}
+
+.selectBox-label {
+    padding: 2px 7px 0;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 22px;
+}
+
+.selectBox-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url(images/select_arrow.png) no-repeat 0 0;
+}
+
+.selectBox-dropdown-menu {
+    position: absolute;
+    z-index: 99999;
+    max-height: 200px;
+    min-height: 1em;
+    border: 1px solid #838584;
+    background: #FFF;
+    overflow: auto;
+    padding: 0;
+    border-radius: 9px;
+}
+
+.selectBox-options LI A {
+    display: block;
+    line-height: 20px;
+    padding: 1px 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+
+.selectBox-options LI+LI A {
+    border-top: 1px solid #838584;
+}
+
+.selectBox-options LI.selectBox-hover A {
+    background: #0098a6;
+    color: #fff;
+}
+
+.selectBox-options LI.selectBox-disabled A {
+    color: #888;
+    background-color: transparent;
+}
+
+.selectBox-options LI.selectBox-selected A {
+    background: #f4f4f4;
+    color: #5d5d5d;
+}
+
+.selectBox.selectBox-disabled {
+    color: #888 !important;
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.back {
+    margin-bottom: 10px;
+}
+
+.single-post {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-excerpt {
+    font-size: 16px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    margin-bottom: 14px;
+}
+.footer-sub-links a.inst {
+    background: url(../img/icons/f-inst.png) center 153px no-repeat;
+    transition: 0.5s linear;
+}

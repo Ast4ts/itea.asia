@@ -1,0 +1,331 @@
+
+* {margin: 0; padding: 0;}
+
+.ffTextBoxWrapper,
+.ffPasswordWrapper,
+.ffCheckboxWrapper,
+.ffRadioWrapper,
+.ffTextAreaWrapper,
+.ffSubmitWrapper,
+.ffResetWrapper,
+.ffButtonWrapper {display: inline-block; zoom: 1; *display: inline; margin: 0px 0;}
+
+.ffSelectWrapper{display: inline-block; zoom: 1; margin: 0px 0; position: relative; z-index:1;}
+
+
+.ffTextBoxLeft, .ffTextBoxRight,
+.ffPasswordLeft, .ffPasswordRight,
+.ffCheckbox, .ffRadio, .ffSelectButton, .ffSelectButton span,
+.ffSelectMenuWrapper div.ffSelectMenuTop,
+.ffSelectMenuWrapper div.ffSelectMenuBottom,
+.ffSelectMenuWrapper > div > span,
+.ffTextAreaTop, .ffTextAreaTop span,
+.ffTextAreaBottom, .ffTextAreaBottom span,
+.ffSubmitWrapper a, .ffSubmitWrapper a span,
+.ffResetWrapper a, .ffResetWrapper a span,
+.ffButtonWrapper a, .ffButtonWrapper a span {
+	background-repeat: no-repeat;
+}
+
+
+/* text box */
+.ffTextBoxRight, .ffPasswordRight {
+	background-position: right -256px;
+	padding-right:0px;
+}
+.ffTextBoxLeft, .ffPasswordLeft {
+	background-position: 0 0;
+	padding: 0 ;
+}
+.ffTextBoxLeft input, .ffPasswordLeft input {
+	/*	border: 0;
+		height: 28px;
+		background-color: transparent;
+		margin-top: 6px\9;
+		height: 22px\9;*/
+}
+
+
+.ffTextBoxRight:hover,
+.ffPasswordRight:hover {background-position: right -288px;}
+.ffTextBoxLeft:hover,
+.ffPasswordLeft:hover {background-position: 0 -32px;}
+
+
+.focus .ffTextBoxRight,
+.focus .ffPasswordRight {background-position: right -320px;}
+.focus .ffTextBoxLeft,
+.focus .ffPasswordLeft {background-position: 0 -64px;}
+
+.ffTextBoxWrapper.disabled .ffTextBoxRight,
+.ffPasswordWrapper.disabled .ffPasswordRight {background-position: right -352px;}
+.ffTextBoxWrapper.disabled .ffTextBoxLeft,
+.ffPasswordWrapper.disabled .ffPasswordLeft {background-position: 0 -96px; color: #999;}
+
+
+/* checkbox */
+.ffCheckboxWrapper a {
+	text-decoration: none;
+	position: relative;
+font-size:18px; line-height: 31px;
+ color:#3f3f3f; font-style:normal; font-family: 'pf_centro_sans_prolight';
+overflow: hidden;
+display: block;
+}
+.ffCheckbox {
+	width:28px; height:28px; margin-right: 19px;
+	float: left;
+	background:url(../images/bg/checkbox.png) no-repeat 0 0;
+	cursor: pointer;
+}
+.ffCheckboxWrapper:hover a, .ffCeckboxWrapper.focus a {}
+.ffCheckboxWrapper:hover .ffCheckbox, .ffCeckboxWrapper.focus .ffCheckbox{background-position: 0px -28px;}
+.ffCheckboxWrapper.on .ffCheckbox {background-position: 0px -56px;}
+.ffCheckboxWrapper.on:hover .ffCheckbox, .ffCeckboxWrapper.on.focus .ffCheckbox {background-position: 0px -56px;}
+.ffCheckboxWrapper.disabled .ffCheckbox {background-position: 0px 0px;}
+.ffCheckboxWrapper.on.disabled .ffCheckbox {background-position: 0px 0px;}
+.ffCheckboxWrapper.disabled a, .ffCeckboxWrapper.disabled:hover a, .ffCeckboxWrapper.disabled.focus a {color: #999;}
+
+
+/* radio */
+.ffRadioWrapper a {
+	text-decoration: none;
+	color: #909090;
+	position: relative;
+	top: 0px;
+	font-size: 12px;
+	padding-left: 8px;
+	margin-right: 10px;line-height:16px;
+	 font-family: 'PT Sans', sans-serif; 
+}
+.ffRadio {
+	width: 15px;
+	height: 15px;
+	float: left;
+	background: url(../images/radio.png) no-repeat 0 0;
+	cursor: pointer;
+	margin-top:2px;
+	
+}
+.ffRadioWrapper:hover a, .ffRadioWrapper.focus a, .ffRadioWrapper.on a {color: #363636;}
+.ffRadioWrapper:hover .ffRadio, .ffRadioWrapper.focus .ffRadio{background: url(../images/radio.png) no-repeat 0 0;}
+.ffRadioWrapper.on .ffRadio {background: url(../images/radio.png) no-repeat 0 bottom;}
+.ffRadioWrapper.on:hover .ffRadio, .ffRadioWrapper.on.focus .ffRadio {background: url(../images/radio.png) no-repeat 0 bottom;}
+.ffRadioWrapper.disabled .ffRadio {background-position: 0px 0px;}
+.ffRadioWrapper.on.disabled .ffRadio {background-position: 0px 0px;}
+.ffRadioWrapper.disabled a, .ffRadioWrapper.disabled:hover a, .ffRadioWrapper.disabled.focus a {color: #363636;}
+
+
+/* selectbox 
+.ffSelectWrapper {width:212px; *clear:both;}
+.ffSelect {position: relative;}
+
+.ffSelect > a {
+	background:url(../images/bg/select-bg.jpg)no-repeat right 11px #fff;
+	display: block;
+	text-decoration: none;
+	outline: 0;
+	cursor: default;
+	
+}
+.ffSelect > a > span {
+	display: block;
+	background-position: 0 0;
+	overflow: hidden;
+	white-space: nowrap;
+	*white-space: normal;
+	text-overflow: ellipsis;
+	
+	padding-left:8px;
+padding-right: 22px;
+height: 23px;
+line-height: 23px;
+font-size: 12px;
+color: #5a5f65;
+border: none;
+font-family:Tahoma, sans-serif;
+cursor:pointer;
+border:1px solid #95989b; 
+-moz-border-radius: 5px;   -webkit-border-radius: 5px;   -khtml-border-radius: 5px;   border-radius: 5px; behavior: url(PIE.htc);
+}
+
+.ffSelect:hover > a, .ffSelectWrapper.focus .ffSelect > a {}
+.ffSelect:hover > a > span, .ffSelectWrapper.focus .ffSelect > a > span {color: #5a5f65;  }
+.ffSelectWrapper.active  .ffSelect> a { z-index: 1005; position: relative; }
+.ffSelectWrapper.active  .ffSelect > a > span {color: #525252;}
+.ffSelectWrapper.disabled .ffSelect > a {background-position: right -224px;}
+.ffSelectWrapper.disabled .ffSelect > a > span {background-position: 0 -96px; color: #999;}
+
+
+.ffSelectMenuWrapper {width: 100%;}
+
+
+.ffSelectMenuWrapper .ffSelectMenuMidBG ul{list-style-type:none;margin:0 0;padding:0; border:1px solid #95989b; }
+.ffSelectMenuWrapper .ffSelectMenuMidBG li {padding: 2px 8px; text-align: left; cursor: default; line-height:18px; background-color: #fff;color:#666666;}
+.ffSelectMenuWrapper .ffSelectMenuMidBG li SPAN{font-weight: 100; font-size: 12px; }
+.ffSelectMenuWrapper .ffSelectMenuMidBG li.disabled SPAN{color:#888;}
+.ffSelectMenuWrapper .ffSelectMenuMidBG li.on{background-color: #efefef; color:#818181;}
+
+
+.ffSelectMenuWrapper{}
+.ffSelectMenuTop {
+	height: 0px;	
+	background-position: 0 -394px;
+
+}
+.ffSelectMenuTop span {
+	display: block;
+	height: 5px;
+	margin-left: 8px;
+	background: right -384px;
+}
+
+.ffSelectMenuBottom {
+	height: 5px;
+	background-position: 0 -414px;
+}
+.ffSelectMenuBottom span {
+	display: block;
+	height: 5px;
+	margin-left: 8px;
+	background-position: right -404px;
+}
+.ffSelectMenuMidBG {}
+.ffSelectMenuMid  {max-height: 200px; overflow: auto; }
+
+.scrollingBarWrapper{width:24px;height:200px;background:url(images/scrollingBarBg.png) no-repeat;right:3px!important;}
+.scrollingHandle {width:24px;padding-top:20px;background:url(images/scrollingHandleTop.png) no-repeat 0 0;}
+.scrollingHandleBottom{width:24px;background:url(images/scrollingHandleBottom.png) no-repeat 0px bottom}
+*/
+
+
+/* textarea */
+.ffTextAreaWrapper textarea {
+    border: 0;
+    margin: 10px 10px 10px 15px;
+    padding:0 ;
+    font-size: 14px;
+    color: #555;
+    background: none;
+    font-family: Arial;
+    resize: none;
+}
+
+
+.ffTextAreaTop {
+	height: 5px;
+	background-position: 0 -394px;
+}
+.ffTextAreaTop span {
+	display: block;
+	height: 5px;
+	margin-left: 8px;
+	background-position: right -384px;
+}
+
+.ffTextAreaMid {
+    background: transparent url(images/sides.png) repeat-y right 0;
+}
+.ffTextAreaMid .ffTextAreaLeft {
+    background: url(images/sides.png) repeat-y 0 0;
+    margin-right: 4px;
+}
+
+
+.ffTextAreaBottom {
+	height: 5px;
+	background-position: 0 -414px;
+}
+.ffTextAreaBottom span {
+	display: block;
+	height: 5px;
+	margin-left: 6px;
+	background-position: right -404px;
+}
+*/
+
+/* button */
+.ffButtonWrapper > a {
+	background-position: right -585px;
+	display: block;
+	text-decoration: none;
+	outline: 0;
+}
+.ffButtonWrapper > a > span {
+	display: block;
+	height: 36px;
+	padding-bottom: 2px;
+	line-height: 39px;
+	font-size: 15px;
+	background-position: 0 -424px;
+	text-align: center;
+	padding: 0 10px 0 15px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.ffButtonWrapper:hover > a {background-position: right -625px;}
+.ffButtonWrapper:hover > a > span {background-position: 0 -464px;}
+.ffButtonWrapper > a:active {background-position: right -665px; position: relative; }
+.ffButtonWrapper > a:active > span {background-position: 0 -504px;}
+.ffButtonWrapper.disabled > a {background-position: right -705px; position: static;}
+.ffButtonWrapper.disabled > a > span {background-position: 0 -544px;color: #c1c1c1;}
+
+input[type="text"], input[type="password"], textarea, select {outline: none;} /* remove webkit yellow border */
+
+select.mobileSelect{opacity:0;filter:alpha(opacity=0);position:absolute;top:0;display:block;}
+
+
+
+
+
+
+
+/**/
+.choice-select.ffSelectWrapper {width:334px; height:60px; text-align:left; float:left; position:relative; }
+.choice-select .ffSelectWrapper .ffSelect > a {background:url(../images/bg/select.png) no-repeat 0 0; display:block; 	width:334px; height:60px; text-decoration:none;}
+.choice-select .ffSelectWrapper .ffSelect > a > span { height:25px; font-size:24px;  line-height:26px; color:#000000; display:block; padding:13px 45px 18px 26px;  background:url(../images/bg/arr-select.png) no-repeat right center ;  border:none;  font-family: 'pf_agora_sans_proregular';}
+.choice-select .ffSelectWrapper .ffSelect:hover > a > span, .select-search .ffSelectWrapper.focus .ffSelect > a > span {color:#3d3d3d; background:url(../images/bg/arr-select.png) no-repeat right center ; }
+
+.choice-select .ffSelectMenuWrapper { border-top:none; border-top:none; position:absolute; left:0;}
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG { border-top:none; border-top:none; width:287px; padding:8px 19px; background:url(../images/bg/select-bg.jpg) repeat-x 0 0 #eeeeee; -webkit-box-shadow: 3px 5px 4px  #e2e2e2;	-moz-box-shadow: 3px 5px 4px #e2e2e2;	box-shadow: 3px 5px 4px #e2e2e2; position:relative;}
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG .ffSelectMenuMid { border-top:none; border-top:none; }
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG ul{list-style-type:none;margin:0 0;padding:0; border:none;  }
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li {padding: 3px 6px; text-align: left; cursor: pointer;  background:none; font-size:24px;  line-height:26px; color:#0098a6; font-family: 'pf_agora_sans_proregular';}
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li+li{background:url(../images/bg/li-bg.jpg) repeat-x 0 top;}
+.choice-select.ffSelectMenuWrapper .ffSelectMenuMidBG li.selected { color:#0098a6; text-decoration:underline;}
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li SPAN{font-size: 24px; font-weight:100;}
+.choice-select .ffSelectMenuWrapper .ffSelectMenuMidBG li.on{text-decoration:underline; color:#0098a6;}
+
+/**/
+.filter .ffSelectWrapper {width:735px; height:25px; text-align:left;  position:relative; background:#fff; z-index:10;}
+.filter .ffSelectWrapper .ffSelect > a {display:block;  height:23px; text-decoration:none;}
+.filter .ffSelectWrapper .ffSelect > a > span { height:23px; font-size:20px; line-height:22px; color:#242021; font-family:arial,sans-serif; display:block; padding:0px 4px 0px 4px;  background:url(../images/bg/select-bg2.jpg) no-repeat right center ;  border:1px solid #000;  }
+.filter .ffSelectWrapper .ffSelect:hover > a > span, .select-search .ffSelectWrapper.focus .ffSelect > a > span {color:#3d3d3d; background:url(../images/bg/select-bg2.jpg) no-repeat right center ; }
+
+.filter .ffSelectMenuWrapper { border-top:none; border-top:none; }
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG { border-top:none; border-top:none; width:733px; border:1px solid #000;  position:relative; background:#fff;}
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG .ffSelectMenuMid { border-top:none; border-top:none; }
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG ul{list-style-type:none;margin:0 0;padding:0; border:none;  }
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG li {padding: 0px 5px; text-align: left; cursor: pointer;  background:none; font-size:20px; line-height:26px; color:#242021; font-family:arial,sans-serif;  }
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG li+li{}
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG li.selected { color:#242021; text-decoration:underline;}
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG li SPAN{font-size: 20px; font-weight:100;}
+.filter .ffSelectMenuWrapper .ffSelectMenuMidBG li.on{text-decoration:underline; color:#242021;}
+
+.filter2 .ffSelectWrapper {width:188px; height:25px; text-align:left;  position:relative; z-index:1;}
+.filter2 .ffSelectMenuWrapper .ffSelectMenuMidBG { border-top:none; border-top:none; width:186px; border:1px solid #000;  position:relative;}
+
+.filter3 .ffSelectWrapper {width:93px; height:25px; text-align:left;  position:relative; z-index:1;}
+.filter3 .ffSelectMenuWrapper .ffSelectMenuMidBG { border-top:none; border-top:none; width:91px; border:1px solid #000;  position:relative; }
+
+.filter4 .ffSelectWrapper {width:83px; height:25px; text-align:left;  position:relative; z-index:1;}
+.filter4 .ffSelectMenuWrapper .ffSelectMenuMidBG { border-top:none; border-top:none; width:81px; border:1px solid #000;  position:relative; }
+
+/*------------------------*/
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
