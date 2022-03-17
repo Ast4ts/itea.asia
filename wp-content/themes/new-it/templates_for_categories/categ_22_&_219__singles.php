@@ -29,9 +29,20 @@ $ID = pll_get_post($id, 'ru');
 <!--    </nav>-->
 <!--</section>-->
 <?php
+$all_dates = [];
 $all_dates_right = array();
 $all_dates_left = array();
 $all_dates_vdnh = array();
+$result = $wpdb->get_results("
+                  SELECT * 
+                  FROM  $wpdb->postmeta
+                      WHERE post_id = $ID AND meta_filiation == ''
+              ");
+foreach ($result as $k => $item) {
+    if (strtotime(date("d.m.y")) < strtotime($item->meta_value)) {
+        $all_dates[] = $item->meta_value;
+    }
+}
 $result = $wpdb->get_results("
                   SELECT * 
                   FROM  $wpdb->postmeta
@@ -42,22 +53,25 @@ foreach ($result as $k => $item) {
     if ($item->meta_filiation === $Uuid_left_band && ($item->meta_key == 'date1' || $item->meta_key == 'date2' || $item->meta_key == 'date3' || $item->meta_key == 'date4' || $item->meta_key == 'date5' || $item->meta_key == 'date6')) {
         if (strtotime(date("d.m.y")) < strtotime($item->meta_value)) {
             $all_dates_left[] = $item->meta_value;
+            $all_dates[] = $item->meta_value;
         }
     }
     if ($item->meta_filiation === $Uuid_right_band && ($item->meta_key == 'date1' || $item->meta_key == 'date2' || $item->meta_key == 'date3' || $item->meta_key == 'date4' || $item->meta_key == 'date5' || $item->meta_key == 'date6')) {
         if (strtotime(date("d.m.y")) < strtotime($item->meta_value)) {
             $all_dates_right[] = $item->meta_value;
+            $all_dates[] = $item->meta_value;
         }
     }
     if ($item->meta_filiation === $Uuid_vdnh_band && ($item->meta_key == 'date1' || $item->meta_key == 'date2' || $item->meta_key == 'date3' || $item->meta_key == 'date4' || $item->meta_key == 'date5' || $item->meta_key == 'date6')) {
         if (strtotime(date("d.m.y")) < strtotime($item->meta_value)) {
             $all_dates_vdnh[] = $item->meta_value;
+            $all_dates[] = $item->meta_value;
         }
     }
 }
 //  var_dump($all_dates_right, $ID);
 
-$tildaOn = get_post_meta(pll_get_post($post->ID),'_tilda', true);
+$tildaOn = get_post_meta(pll_get_post($post->ID), '_tilda', true);
 
 
 //говно
@@ -84,11 +98,11 @@ if (!empty($dis) || !empty($dis_left) || !empty($dis_vdbh)) {
 
 if (!empty($tildaOn) && (pll_get_post($id, pll_current_language()) === $post->ID) && $tildaOn['status'] !== 'off'):?>
     <?php require_once('categ_22_&_219__singles_tilda.php'); ?>
-<?php elseif(get_post_meta($post->ID,'new_template', true)):?>
+<?php elseif (get_post_meta($post->ID, 'new_template', true)): ?>
     <?php require_once('categ_22_&_219__singles_new.php'); ?>
-<?php else:?>
+<?php else: ?>
     <?php require_once('categ_22_&_219__singles_old.php'); ?>
-<?php endif;?>
+<?php endif; ?>
 
 <!--schema.org-->
 <?php
@@ -116,17 +130,17 @@ $getEdAl = array_map('clearTags', $getEdAl[count($getEdAl) - 1]);
 ?>
 
 <script>
-    var hash = window.location.hash;
-    if (hash === '#location2') {
-        $('.course-location input').removeAttr('checked');
-        $('#location2').click();
-        $('#location2').prop('checked', true);
-    }
-    if (hash === '#location3') {
-        $('.course-location input').removeAttr('checked');
-        $('#location3').click();
-        $('#location3').prop('checked', true);
-    }
+  var hash = window.location.hash
+  if (hash === '#location2') {
+    $('.course-location input').removeAttr('checked')
+    $('#location2').click()
+    $('#location2').prop('checked', true)
+  }
+  if (hash === '#location3') {
+    $('.course-location input').removeAttr('checked')
+    $('#location3').click()
+    $('#location3').prop('checked', true)
+  }
 </script>
 
 <script type="application/ld+json">
@@ -166,6 +180,7 @@ $getEdAl = array_map('clearTags', $getEdAl[count($getEdAl) - 1]);
   ]
   <?php endif; ?>
 }
+
 </script>
 
 <?php get_footer(); ?>

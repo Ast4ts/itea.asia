@@ -56,10 +56,10 @@ $h1_title = get_field('h1_title', $term);
                                 <div class="second-desc text-brand">
                                     <span class="text-bold">
                                         <?php
-                                        if ($all_dates_right[0] == null) {
+                                        if ($all_dates[0] == null) {
                                             echo($lang ? 'Дату уточните у администрации' : 'Старт курсу запитуйте в адміністрації');
                                         } else {
-                                            echo $all_dates_right[0];
+                                            echo $all_dates[0];
                                         }
                                         ?>
                                     </span>
@@ -83,7 +83,11 @@ $h1_title = get_field('h1_title', $term);
                                 <div class="block__main-col">
                                     <div class="second-desc text-bold text-brand"><?= $course_during . ($lang ? ' час.' : ' год.'); ?></div>
                                     <div class="second-desc"><?php pll_e("по 2-3 раза в неделю");?></div>
-                                    <div class="second-desc"><?php pll_e("с 19:00 до 22:00");?></div>
+                                    <?php
+                                    $time_from = get_post_meta(pll_get_post($post->ID, 'ru'), 'time_from', true) || "19:00";
+                                    $time_to = get_post_meta(pll_get_post($post->ID, 'ru'), 'time_to', true) || "22:00";
+                                    ?>
+                                    <div class="second-desc"><?php pll_e("с $time_from до $time_to");?> по МСК</div>
                                 </div>
                             </div>
                             <div class="block__main-row">
